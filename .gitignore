@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Obsidian
+.obsidian/
+
+# Editor/system
+*.swp
+*.swo
+.idea/
+.vscode/
