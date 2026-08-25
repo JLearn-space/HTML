@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 4 — Изображения и мультимедиа</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+    <h1>Изображения и мультимедиа на странице</h1>
+
+    <h2>Базовое изображение</h2>
+    <img src="images/cat.jpg" alt="Рыжий кот сидит на подоконнике">
+    <img src="images/cat.jpg"
+         alt="Рыжий кот сидит на подоконнике"
+         width="400"
+         height="300">
+    <img src="https://via.placeholder.com/300x200"
+         alt="Заглушка — серый прямоугольник 300×200">
+    <img src="images/decorative-line.png" alt="" width="300">
+
+    <h2>Изображение с подписью</h2>
+    <figure>
+        <img src="images/chart.png" alt="График роста продаж за 2025 год" width="500">
+        <figcaption>Рис. 1. Рост продаж компании в 2025 году</figcaption>
+    </figure>
+
+    <h2>Изображение-ссылка</h2>
+    <a href="about.html">
+        <img src="images/logo.png" alt="Логотип компании — перейти на страницу О нас" width="150">
+    </a>
+
+    <h2>Примеры форматов</h2>
+    <figure>
+        <img src="images/photo.jpg" alt="Закат над горами" width="400">
+        <figcaption>JPEG — фотография</figcaption>
+    </figure>
+    <figure>
+        <img src="images/logo-transparent.png" alt="Логотип на прозрачном фоне" width="200">
+        <figcaption>PNG — прозрачный фон</figcaption>
+    </figure>
+    <figure>
+        <img src="images/icon-star.svg" alt="Иконка звезды" width="100">
+        <figcaption>SVG — векторная графика</figcaption>
+    </figure>
+
+    <h2>Аудиоплеер</h2>
+    <audio controls>
+        <source src="audio/music.mp3" type="audio/mpeg">
+        <source src="audio/music.ogg" type="audio/ogg">
+        Ваш браузер не поддерживает воспроизведение аудио.
+    </audio>
+
+    <h2>Видеоплеер</h2>
+    <video controls width="640" height="360" poster="images/video-preview.jpg">
+        <source src="video/lesson.mp4" type="video/mp4">
+        <source src="video/lesson.webm" type="video/webm">
+        Ваш браузер не поддерживает воспроизведение видео.
+    </video>
+
+</body>
+</html>

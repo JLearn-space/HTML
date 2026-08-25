@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 5 — Таблицы</title>
+</head>
+<body>
+
+    <h1>Таблицы в HTML</h1>
+
+    <h2>Простая таблица: список учеников</h2>
+    <table>
+        <tr>
+            <th>Имя</th>
+            <th>Возраст</th>
+            <th>Город</th>
+        </tr>
+        <tr>
+            <td>Азиз</td>
+            <td>21</td>
+            <td>Ташкент</td>
+        </tr>
+        <tr>
+            <td>Дилноза</td>
+            <td>19</td>
+            <td>Алмалык</td>
+        </tr>
+    </table>
+
+    <h2>Таблица товаров с итогами</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Товар</th>
+                <th>Цена</th>
+                <th>Количество</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ноутбук</td>
+                <td>8 000 000 сум</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Мышь</td>
+                <td>150 000 сум</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Клавиатура</td>
+                <td>350 000 сум</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><strong>Итого</strong></td>
+                <td><strong>8 850 000 сум</strong></td>
+                <td><strong>4</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Таблица с colspan</h2>
+    <table>
+        <tr>
+            <th colspan="2">Контактная информация</th>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>info@saydullayev.fun</td>
+        </tr>
+        <tr>
+            <td>Телефон</td>
+            <td>+998 90 123-45-67</td>
+        </tr>
+    </table>
+
+    <h2>Таблица с rowspan</h2>
+    <table>
+        <tr>
+            <th>Имя</th>
+            <th>Предмет</th>
+            <th>Оценка</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Азиз</td>
+            <td>Математика</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Физика</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <h2>Оцениваемая таблица с caption и scope</h2>
+    <table>
+        <caption>Оценки учеников по предметам</caption>
+        <thead>
+            <tr>
+                <th scope="col">Имя</th>
+                <th scope="col">Математика</th>
+                <th scope="col">Физика</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Азиз</th>
+                <td>5</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <th scope="row">Дилноза</th>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

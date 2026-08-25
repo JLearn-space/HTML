@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 6 — Формы. Часть 1</title>
+</head>
+<body>
+
+    <h1>Формы: основы ввода</h1>
+
+    <h2>Пример: форма регистрации</h2>
+
+    <form action="#" method="post">
+
+        <label for="username">Имя пользователя:</label><br>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="age">Возраст:</label><br>
+        <input type="number" id="age" name="age" min="1" max="120"><br><br>
+
+        <label for="birthday">Дата рождения:</label><br>
+        <input type="date" id="birthday" name="birthday"><br><br>
+
+        <p>Интересующие темы:</p>
+        <input type="checkbox" id="html" name="topics" value="html">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="css" name="topics" value="css">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="js" name="topics" value="js">
+        <label for="js">JavaScript</label><br><br>
+
+        <p>Уровень подготовки:</p>
+        <input type="radio" id="beginner" name="level" value="beginner">
+        <label for="beginner">Начинающий</label><br>
+        <input type="radio" id="intermediate" name="level" value="intermediate">
+        <label for="intermediate">Средний</label><br>
+        <input type="radio" id="advanced" name="level" value="advanced">
+        <label for="advanced">Продвинутый</label><br><br>
+
+        <label for="search">Поиск:</label><br>
+        <input type="text" id="search" name="search" placeholder="Например: HTML курс"><br><br>
+
+        <label for="city">Город:</label><br>
+        <input type="text" id="city" name="city" value="Ташкент"><br><br>
+
+        <label for="required-email">Обязательный email:</label><br>
+        <input type="email" id="required-email" name="required-email" required><br><br>
+
+        <button type="submit">Зарегистрироваться</button>
+
+    </form>
+
+</body>
+</html>

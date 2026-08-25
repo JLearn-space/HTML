@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 7 — Формы. Часть 2</title>
+</head>
+<body>
+
+    <h1>Формы: сложные элементы и валидация</h1>
+
+    <form action="#" method="post">
+
+        <label for="country">Страна:</label><br>
+        <select id="country" name="country">
+            <option value="uz" selected>Узбекистан</option>
+            <option value="kz">Казахстан</option>
+            <option value="kg">Кыргызстан</option>
+        </select><br><br>
+
+        <label for="course">Выберите курс:</label><br>
+        <select id="course" name="course">
+            <optgroup label="Frontend">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+            </optgroup>
+            <optgroup label="Backend">
+                <option value="php">PHP</option>
+                <option value="mysql">MySQL</option>
+            </optgroup>
+        </select><br><br>
+
+        <label for="bio">О себе:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="40"
+                  placeholder="Расскажите немного о себе..."></textarea><br><br>
+
+        <fieldset>
+            <legend>Контактные данные</legend>
+            <label for="phone">Телефон:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+998 XX XXX-XX-XX"><br><br>
+            <label for="contact-email">Email:</label><br>
+            <input type="email" id="contact-email" name="contact-email"><br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Уровень подготовки</legend>
+            <input type="radio" id="beg" name="level" value="beginner">
+            <label for="beg">Начинающий</label><br>
+            <input type="radio" id="mid" name="level" value="intermediate">
+            <label for="mid">Средний</label><br>
+            <input type="radio" id="adv" name="level" value="advanced">
+            <label for="adv">Продвинутый</label>
+        </fieldset><br>
+
+        <button type="submit">Отправить форму</button>
+        <button type="reset">Очистить</button>
+
+        <br><br>
+
+        <h2>Поля с валидацией</h2>
+
+        <label for="age2">Возраст (от 16 до 99):</label><br>
+        <input type="number" id="age2" name="age2" min="16" max="99"><br><br>
+
+        <label for="username">Имя (макс. 20 символов):</label><br>
+        <input type="text" id="username" name="username" maxlength="20"><br><br>
+
+        <label for="student-id">Номер студенческого (ровно 7 цифр):</label><br>
+        <input type="text" id="student-id" name="student-id"
+               pattern="[0-9]{7}"
+               title="Введите ровно 7 цифр"><br><br>
+
+        <label for="name-ru">Имя (только кириллица):</label><br>
+        <input type="text" id="name-ru" name="name-ru"
+               pattern="[А-Яа-яЁё\s]+"
+               title="Введите имя только кириллическими буквами"><br><br>
+
+        <button type="submit">Отправить с валидацией</button>
+
+    </form>
+
+</body>
+</html>

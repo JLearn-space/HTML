@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 8 — Доступность</title>
+</head>
+<body>
+
+    <h1>Доступность (Accessibility)</h1>
+
+    <h2>Кнопки с aria-label</h2>
+    <button type="button" aria-label="Закрыть окно">&times;</button>
+    <a href="https://github.com/Saydullayev017"
+       aria-label="Мой профиль на GitHub"
+       target="_blank"
+       rel="noopener noreferrer">
+        <img src="images/github-icon.svg" alt="" width="32">
+    </a>
+
+    <h2>Уведомления с role</h2>
+    <div role="alert">
+        <strong>Внимание:</strong> файл не был сохранён. Пожалуйста, попробуйте снова.
+    </div>
+    <button type="submit">Отправить</button>
+
+    <h2>Контраст и цвет</h2>
+    <p style="color: red;"><strong>Ошибка:</strong> поле заполнено неверно. Проверьте формат email.</p>
+
+    <h2>Примеры tabindex</h2>
+    <a href="https://example.com">Обычная ссылка</a><br>
+    <button type="button">Обычная кнопка</button><br><br>
+    <div tabindex="0" role="button" aria-label="Развернуть подробности"
+         style="padding: 8px 16px; border: 2px solid #333; display: inline-block; cursor: pointer;">
+        Подробнее ▼
+    </div>
+    <div tabindex="-1" id="modal-title" style="margin-top: 20px;">
+        Заголовок модального окна (не в Tab-навигации)
+    </div>
+
+    <h2>Пример правильной иерархии заголовков</h2>
+    <h3>Рецепт плова</h3>
+    <h4>Ингредиенты</h4>
+    <h4>Пошаговое приготовление</h4>
+    <h5>Подготовка риса</h5>
+    <h5>Обжарка мяса</h5>
+    <h5>Финальная варка</h5>
+    <h3>Советы по подаче</h3>
+
+    <h2>Доступная таблица</h2>
+    <table>
+        <caption>Сравнение технологий</caption>
+        <thead>
+            <tr>
+                <th scope="col">Технология</th>
+                <th scope="col">Назначение</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">HTML</th>
+                <td>Структура</td>
+            </tr>
+            <tr>
+                <th scope="row">CSS</th>
+                <td>Оформление</td>
+            </tr>
+            <tr>
+                <th scope="row">JavaScript</th>
+                <td>Поведение</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Доступная форма</h2>
+    <form action="#">
+        <fieldset>
+            <legend>Обратная связь</legend>
+            <label for="fb-name">Имя:</label><br>
+            <input type="text" id="fb-name" name="fb-name" required><br><br>
+            <label for="fb-msg">Сообщение:</label><br>
+            <textarea id="fb-msg" name="fb-msg" rows="3" required></textarea><br><br>
+            <button type="submit">Отправить</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>

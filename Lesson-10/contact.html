@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контакты — свяжитесь с Азизом через форму обратной связи или другие способы связи.">
+    <meta property="og:title" content="Контакты — Портфолио Азиза">
+    <meta property="og:description" content="Форма обратной связи и способы связи со мной.">
+    <meta property="og:image" content="https://example.com/images/profile.jpg">
+    <title>Контакты — Портфолио Азиза</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+    <header>
+        <p><strong>Азиз — веб-разработчик</strong></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+                <li><a href="projects.html">Проекты</a></li>
+                <li><a href="contact.html" aria-current="page">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Контакты</h1>
+
+        <section>
+            <h2>Способы связи</h2>
+            <table>
+                <caption>Контактная информация</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Способ</th>
+                        <th scope="col">Контакт</th>
+                        <th scope="col">Время ответа</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Email</th>
+                        <td><a href="mailto:aziz@example.com">aziz@example.com</a></td>
+                        <td>В течение суток</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Telegram</th>
+                        <td><a href="https://t.me/example" target="_blank" rel="noopener noreferrer">@example</a></td>
+                        <td>Несколько часов</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Телефон</th>
+                        <td><a href="tel:+998901112233">+998 90 111-22-33</a></td>
+                        <td>По будням, 9:00–18:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Напишите мне</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Свяжитесь со мной</legend>
+                    <label for="name">Имя:</label><br>
+                    <input type="text" id="name" name="name" required maxlength="50"><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="message">Сообщение:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40"
+                              placeholder="Напишите ваш вопрос..." required></textarea><br><br>
+                    <button type="submit">Отправить</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><small>&copy; 2026 Азиз. Создано на курсе «HTML: за 10 уроков».</small></p>
+    </footer>
+
+</body>
+</html>
