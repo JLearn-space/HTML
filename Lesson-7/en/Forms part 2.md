@@ -2,6 +2,18 @@
 
 > **Connection to the previous lesson:** in the previous lesson we covered basic form fields (text, email, password, number, date, checkbox, radio) and the `label`/`for`/`id` connection. Today we finish the remaining form elements and learn to group fields and validate input without JavaScript.
 
+```mermaid
+flowchart TD
+    A["Need a form element?"] --> B{"Text field?"}
+    B -->|"Single line"| C["input type=text/email/password/number/date"]
+    B -->|"Multiple lines"| D["textarea"]
+    E{"Choice needed?"} --> F{"Few options?"}
+    F -->|Yes| G["radio or checkbox"]
+    F -->|No| H["select + option"]
+    E --> I{"Grouping fields?"}
+    I -->|Yes| J["fieldset + legend"]
+```
+
 ---
 
 ## What you will learn by the end of the lesson
@@ -263,6 +275,18 @@ The button text is set via the `value` attribute (as we've seen with regular fie
 - **`type="button"`** — a regular button with no built-in behavior; used when button behavior will be added later via JavaScript (in this course we won't actively use these buttons since JavaScript isn't part of the curriculum, but it's important to know this value exists).
 
 **Important warning:** if `<button>` is inside `<form>` and you **didn't specify** `type` explicitly, the browser treats it as `type="submit"` by default. This can lead to unexpected form submission when you just wanted "a button for something else." **Rule: always specify `type` on `<button>` explicitly.**
+
+```mermaid
+flowchart LR
+    A["<button>"] --> B{"type attribute?"}
+    B -->|"type=submit"| C["Sends form data"]
+    B -->|"type=reset"| D["Clears all fields"]
+    B -->|"type=button"| E["No default behavior — JS only"]
+    F["<input>"] --> G{"type attribute?"}
+    G -->|"type=submit"| H["Sends form data"]
+    G -->|"type=reset"| I["Clears all fields"]
+    G -->|"type=button"| J["No default behavior"]
+```
 
 ---
 ### Common beginner mistakes

@@ -104,6 +104,18 @@
 
 **Это тема, которую мы разбираем только обзорно** - в этом курсе мы не будем глубоко погружаться во все возможные варианты Open Graph-тегов (их довольно много - тип контента, локаль, автор и т.д.), но важно, что вы теперь знаете, откуда берутся красивые превью-карточки при расшаривании ссылок, и умеете добавить базовый набор для своего проекта.
 
+```mermaid
+flowchart TD
+    A["<head>"] --> B["charset"]
+    A --> C["viewport"]
+    A --> D["title"]
+    A --> E["description"]
+    A --> F["favicon"]
+    A --> G["Open Graph: og:title, og:description, og:image"]
+    A --> H["<link rel=stylesheet>"]
+    A --> I["<script>"]
+```
+
 ---
 
 ## Блок 3. Подключение CSS через `<link>`
@@ -188,6 +200,14 @@
 |Без атрибутов, в конце `<body>`|Более старый, но всё ещё рабочий и простой для понимания вариант|
 
 **Это тоже обзорная тема этого курса** - глубокое понимание работы JavaScript и правильного выбора между `defer`/`async` в сложных случаях приходит вместе с изучением самого JavaScript, что выходит за рамки этого курса про HTML.
+
+```mermaid
+flowchart TD
+    A["<script> in HTML"] --> B{"Has defer or async?"}
+    B -->|"defer"| C["Download in parallel, execute after HTML parsed"]
+    B -->|"async"| D["Download in parallel, execute immediately"]
+    B -->|"Neither"| E["Download and execute, blocks HTML parsing"]
+```
 
 ---
 

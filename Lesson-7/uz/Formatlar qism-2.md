@@ -2,6 +2,18 @@
 
 > **Oldingi dars bilan bog'lanish:** o'tgan darsda biz asosiy forma maydonlarini (text, email, password, number, date, checkbox, radio) va `label`/`for`/`id` bog'lanishini o'rgandik. Bugun qolgan forma elementlarini tugallab, maydonlarni guruhlash va JavaScript ishlatmasdan kiritishni tekshirishni o'rganamiz.
 
+```mermaid
+flowchart TD
+    A["Need a form element?"] --> B{"Text field?"}
+    B -->|"Single line"| C["input type=text/email/password/number/date"]
+    B -->|"Multiple lines"| D["textarea"]
+    E{"Choice needed?"} --> F{"Few options?"}
+    F -->|Yes| G["radio or checkbox"]
+    F -->|No| H["select + option"]
+    E --> I{"Grouping fields?"}
+    I -->|Yes| J["fieldset + legend"]
+```
+
 ---
 
 ## Dars oxiriga qadar nimalarni o'rganasiz
@@ -263,6 +275,18 @@ Tugmadagi matn `value` atributi orqali belgilanadi (oddiy maydonlarda ko'rgandek
 - **`type="button"`** - ichki xulqiga ega bo'lmagan oddiy tugma; tugmaning xulqini keyinroq JavaScript orqali qo'shish kerak bo'lganda ishlatiladi (bu kursda biz bunday tugmalarni faol ishlatmaymiz, chunki JavaScript kurs dasturiga kirmaydi, lekin bu qiymatning mavjudligini bilish muhim).
 
 **Muhim ogohlantirish:** agar `<button>` `<form>` ichida va siz `type` ni **aniq ko'rsatmagan bo'lsangiz** - brauzer uni odatda `type="submit"** deb hisoblaydi. Bu kutilmagan forma yuborishiga olib kelishi mumkin, agar siz oddiy "boshqa narsa uchun tugma" qilmoqchi bo'lsangiz. **Qoida: doimo `<button>` da `type` ni aniq ko'rsating.**
+
+```mermaid
+flowchart LR
+    A["<button>"] --> B{"type attribute?"}
+    B -->|"type=submit"| C["Sends form data"]
+    B -->|"type=reset"| D["Clears all fields"]
+    B -->|"type=button"| E["No default behavior — JS only"]
+    F["<input>"] --> G{"type attribute?"}
+    G -->|"type=submit"| H["Sends form data"]
+    G -->|"type=reset"| I["Clears all fields"]
+    G -->|"type=button"| J["No default behavior"]
+```
 
 ---
 ### Yangi boshlovchilarning ko'p uchraydigan xatolari

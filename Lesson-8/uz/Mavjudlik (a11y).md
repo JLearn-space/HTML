@@ -2,6 +2,25 @@
 
 > **Oldingi dars bilan bog'lanish:** o'tgan durslarda biz ko'p marta "ekran o'quvchisi buni to'g'ri eshitadi" degan edik — `alt`, `label`, `scope`, `legend` haqida gaplashganda. Bugun barcha tarqalgan eslatmalarni bitta mavzuga — mavjudlikka — birlashtiramiz va yangi vositalar qo'shamiz: ARIA, kontrast, `tabindex`.
 
+```mermaid
+mindmap
+  root((Accessibility))
+    Semantic HTML
+      head, nav, main, footer
+      h1-h6 hierarchy
+      label for id
+    ARIA attributes
+      role
+      aria-label
+      aria-labelledby
+      aria-describedby
+      aria-hidden
+      aria-live
+    Media
+      alt for images
+      captions for video
+```
+
 ---
 
 ## Dars oxiriga qadar nimalarni o'rganasiz
@@ -115,6 +134,18 @@ Diqqat qiling: bu yerda rasmdagi `alt=""` bo'sh (dekorativ ikonka, 4-darsda tush
 
 <!-- Yaxshi: tabiiy button ishlatamiz -->
 <button type="submit">Yuborish</button>
+```
+
+```mermaid
+flowchart TD
+    A["Need to describe an element?"] --> B{"Has visible text?"}
+    B -->|Yes| C["No aria-label needed"]
+    B -->|No| D{"Is it an image?"}
+    D -->|Yes| E["Use alt attribute"]
+    D -->|No| F["Use aria-label"]
+    G["Need to clarify element role?"] --> H{"Semantic HTML tag exists?"}
+    H -->|Yes| I["Use native tag"]
+    H -->|No| J["Use role attribute"]
 ```
 
 ---

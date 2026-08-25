@@ -46,6 +46,18 @@
 
 **Analogy:** `get` is like writing a question on a postcard that every mail carrier sees along the way. `post` is like sending a letter in a sealed envelope.
 
+```mermaid
+flowchart TD
+    A["User fills form fields"] --> B{"Browser validates?"}
+    B -->|No| C["Show validation errors"]
+    B -->|Yes| D["Package data as name=value pairs"]
+    D --> E{"Method?"}
+    E -->|GET| F["Data in URL parameters"]
+    E -->|POST| G["Data in request body"]
+    F --> H["Send to action URL"]
+    G --> H
+```
+
 **Important for this lesson:** without the server-side part (which we're not studying in this course on plain HTML), the form won't actually send data anywhere in reality — but we still build it correctly so the structure is ready for server integration in the future if you continue learning web development.
 
 ---
@@ -238,6 +250,25 @@ On your own, without peeking at the examples, create a group of three radio butt
 
 <input type="radio" id="juice" name="drink" value="juice">
 <label for="juice">Juice</label>
+```
+
+```mermaid
+mindmap
+  root((input types))
+    text
+      Single-line text
+    email
+      Validates email format
+    password
+      Hidden characters
+    number
+      Numeric input
+    date
+      Date picker
+    checkbox
+      Select multiple
+    radio
+      Select one from group
 ```
 
 ---

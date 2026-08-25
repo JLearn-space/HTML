@@ -104,6 +104,18 @@ Let's break down the main tags:
 
 **This is a topic we're only covering at an overview level** — in this course we won't dive deep into all possible Open Graph tag variations (there are quite many — content type, locale, author, etc.), but it's important that you now know where those nice preview cards come from when sharing links, and know how to add a basic set for your project.
 
+```mermaid
+flowchart TD
+    A["<head>"] --> B["charset"]
+    A --> C["viewport"]
+    A --> D["title"]
+    A --> E["description"]
+    A --> F["favicon"]
+    A --> G["Open Graph: og:title, og:description, og:image"]
+    A --> H["<link rel=stylesheet>"]
+    A --> I["<script>"]
+```
+
 ---
 
 ## Block 3. Connecting CSS via `<link>`
@@ -188,6 +200,14 @@ Today a more flexible approach is more commonly used — the `<script>` tag stay
 |Without attributes, at the end of `<body>`|An older but still working and easy-to-understand option|
 
 **This is also an overview-level topic in this course** — a deep understanding of how JavaScript works and the correct choice between `defer`/`async` in complex cases comes with studying JavaScript itself, which is beyond the scope of this HTML course.
+
+```mermaid
+flowchart TD
+    A["<script> in HTML"] --> B{"Has defer or async?"}
+    B -->|"defer"| C["Download in parallel, execute after HTML parsed"]
+    B -->|"async"| D["Download in parallel, execute immediately"]
+    B -->|"Neither"| E["Download and execute, blocks HTML parsing"]
+```
 
 ---
 

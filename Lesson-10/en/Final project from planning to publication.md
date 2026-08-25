@@ -70,6 +70,16 @@ For each page, briefly list which HTML tools from the course you'll be using. Fo
 
 **This planning is not a formality.** This is usually where you notice inconsistencies — for example, that your home page has no link to a page you just created. It's much easier to fix this on paper than after you've already written code for four pages.
 
+```mermaid
+flowchart TD
+    A["Plan: list pages and elements"] --> B["Build semantic skeleton: header, nav, main, footer"]
+    B --> C["Fill with content: headings, text, images"]
+    C --> D["Add forms with validation"]
+    D --> E["Add accessibility: alt, aria, tabindex"]
+    E --> F["Add meta tags and SEO"]
+    F --> G["Test and publish"]
+```
+
 ---
 
 ## Block 2. Step-by-step build: semantics (the skeleton of every page)
@@ -349,3 +359,26 @@ Congratulations — you've traveled the path from the first `<!DOCTYPE html>` to
 - The full cycle: from project planning to public publication (lesson 10).
 
 **What's next:** HTML is just the "skeleton" (as we said from the very first lesson). The logical continuation is **CSS** (styling, colors, spacing, responsive layout for different screens) and then **JavaScript** (interactivity, truly working with forms, dynamic page behavior). The site you published today will become an excellent "playground" for practicing these new skills in the future.
+
+```mermaid
+mindmap
+  root((Course Knowledge))
+    Lesson 1-2
+      HTML document structure
+      Semantic tags
+      Head and body
+    Lesson 3
+      Links and navigation
+    Lesson 4
+      Images and media
+    Lesson 5
+      Tables
+    Lesson 6-7
+      Forms and validation
+    Lesson 8
+      Accessibility a11y
+    Lesson 9
+      Meta tags and SEO
+    Lesson 10
+      Full project cycle
+```

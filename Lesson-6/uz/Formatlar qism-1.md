@@ -46,6 +46,18 @@
 
 **O'xshatish:** `get` — bu pochta openkiga savol yozish, uni har bir pochtachi yo'lda ko'radi. `post` — bu muhrlangan zarfda xabar yuborish.
 
+```mermaid
+flowchart TD
+    A["User fills form fields"] --> B{"Browser validates?"}
+    B -->|No| C["Show validation errors"]
+    B -->|Yes| D["Package data as name=value pairs"]
+    D --> E{"Method?"}
+    E -->|GET| F["Data in URL parameters"]
+    E -->|POST| G["Data in request body"]
+    F --> H["Send to action URL"]
+    G --> H
+```
+
 **Bu dars uchun muhim:** server qismi bizda yo'q (biz toza HTML kursida server dasturlashini o'rganmaymiz), shuning uchun forma haqiqatan ham ma'lumotlarni hech qayerga "yubormaydi" — lekin biz uni to'g'ri quramiz, tuzilasi kelajakda serverga ulanishga tayyor bo'lishi uchun, agar veb-dasturlashni davom ettirsangiz.
 
 ---
@@ -238,6 +250,25 @@ Namunalarga qaramasdan, "Sevimli ichimligingiz" savoli uchun "Choy", "Kofe", "Sh
 
 <input type="radio" id="juice" name="drink" value="juice">
 <label for="juice">Sharbat</label>
+```
+
+```mermaid
+mindmap
+  root((input types))
+    text
+      Single-line text
+    email
+      Validates email format
+    password
+      Hidden characters
+    number
+      Numeric input
+    date
+      Date picker
+    checkbox
+      Select multiple
+    radio
+      Select one from group
 ```
 
 ---

@@ -104,6 +104,18 @@ Asosiy teglarni ko'rib chiqamiz:
 
 **Bu kursda faqat ko'rib chiqish darajasida ko'rib chiqayotgan mavzu** — bu kursda biz barcha mumkin bo'lgan Open Graph teglari variantlariga chuqur kirmaymiz (ular juda ko'p — kontent turi, locale, muallif va hokazo), lekin muhimki, siz endi havolalarni ulashdagi chiroyli oldindan ko'rish kartalari qayerdan kelishini bilasiz va o'z loyihangiz uchun asosiy to'plamni qo'shishni o'rgandingiz.
 
+```mermaid
+flowchart TD
+    A["<head>"] --> B["charset"]
+    A --> C["viewport"]
+    A --> D["title"]
+    A --> E["description"]
+    A --> F["favicon"]
+    A --> G["Open Graph: og:title, og:description, og:image"]
+    A --> H["<link rel=stylesheet>"]
+    A --> I["<script>"]
+```
+
 ---
 
 ## 3-blok. CSS ni `<link>` orqali ulash
@@ -188,6 +200,14 @@ Bugun ko'pincha moslashuvchanroq yondashuv ishlatiladi — `<script>` tegi `<hea
 |Atributlarsiz, `<body>` oxirida|Eskiroq, lekin hali ham ishlaydigan va tushunarli variant|
 
 **Bu ham ushbu kursning ko'rib chiqish mavzusi** — JavaScript ning ishlashini chuqur tushunish va murakkab holatlarda `defer`/`async` orasidagi to'g'ri tanlov JavaScript ning o'zini o'rganish bilan birga keladi, bu HTML haqidagi ushbu kurs doirasidan tashqarida.
+
+```mermaid
+flowchart TD
+    A["<script> in HTML"] --> B{"Has defer or async?"}
+    B -->|"defer"| C["Download in parallel, execute after HTML parsed"]
+    B -->|"async"| D["Download in parallel, execute immediately"]
+    B -->|"Neither"| E["Download and execute, blocks HTML parsing"]
+```
 
 ---
 

@@ -2,6 +2,25 @@
 
 > **Connection to the previous lessons:** in past lessons we've often mentioned "the screen reader will hear this correctly" — when talking about `alt`, `label`, `scope`, `legend`. Today we gather all these scattered mentions into one unified topic — accessibility — and add new tools: ARIA, contrast, `tabindex`.
 
+```mermaid
+mindmap
+  root((Accessibility))
+    Semantic HTML
+      head, nav, main, footer
+      h1-h6 hierarchy
+      label for id
+    ARIA attributes
+      role
+      aria-label
+      aria-labelledby
+      aria-describedby
+      aria-hidden
+      aria-live
+    Media
+      alt for images
+      captions for video
+```
+
 ---
 
 ## What you will learn by the end of the lesson
@@ -115,6 +134,18 @@ The `role` attribute explicitly tells the screen reader what functional role an 
 
 <!-- Good: using the native button -->
 <button type="submit">Submit</button>
+```
+
+```mermaid
+flowchart TD
+    A["Need to describe an element?"] --> B{"Has visible text?"}
+    B -->|Yes| C["No aria-label needed"]
+    B -->|No| D{"Is it an image?"}
+    D -->|Yes| E["Use alt attribute"]
+    D -->|No| F["Use aria-label"]
+    G["Need to clarify element role?"] --> H{"Semantic HTML tag exists?"}
+    H -->|Yes| I["Use native tag"]
+    H -->|No| J["Use role attribute"]
 ```
 
 ---

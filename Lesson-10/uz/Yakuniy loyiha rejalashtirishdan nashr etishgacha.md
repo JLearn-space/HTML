@@ -70,6 +70,16 @@ Har bir sahifa uchuni qisqacha, kursdagi qaysi HTML vositalarini ishlatishingizn
 
 **Bu rejalashtirish shunchaki rasmiy emas.** Aynan shu qadamda odatda nomuvofiqliklarni sezasiz: masalan, bosh sahifada siz yangi gaplashgan sahifaga havola yo'q ekanligini — buni qog'ozda tuzish kod to'rt sahifa yozilgandan keyin tuzishdan ancha oson.
 
+```mermaid
+flowchart TD
+    A["Plan: list pages and elements"] --> B["Build semantic skeleton: header, nav, main, footer"]
+    B --> C["Fill with content: headings, text, images"]
+    C --> D["Add forms with validation"]
+    D --> E["Add accessibility: alt, aria, tabindex"]
+    E --> F["Add meta tags and SEO"]
+    F --> G["Test and publish"]
+```
+
 ---
 
 ## Blok 2. Bosqichma-bosqich yig'ish: semantika (har bir sahifaning skeleti)
@@ -349,3 +359,26 @@ Tabriklaymiz — siz birinchi `<!DOCTYPE html>` dan to'liq nashr etilgan ko'p sa
 - To'liq tsikl: loyiha rejalashtirishdan ochiq nashr etishgacha (10-dars).
 
 **Keyingisi nima:** HTML — bu faqat "skelet" (birinchi dursdan beri aytganimizdek). Yo'ningizning mantiqiy davomi — **CSS** (dizayn, ranglar, bo'sh joylar, turli ekranlar uchun moslashuvchan kodlash) va keyin **JavaScript** (interaktivlik, formalar bilan haqiqatan ishlash, sahifaning dinamik xulq-atvori). Bugun nashr etilgan saytingiz kelajakda yangi bilimlaringizni amalda qo'llash uchun ajoyib "ish maydoni" bo'ladi.
+
+```mermaid
+mindmap
+  root((Course Knowledge))
+    Lesson 1-2
+      HTML document structure
+      Semantic tags
+      Head and body
+    Lesson 3
+      Links and navigation
+    Lesson 4
+      Images and media
+    Lesson 5
+      Tables
+    Lesson 6-7
+      Forms and validation
+    Lesson 8
+      Accessibility a11y
+    Lesson 9
+      Meta tags and SEO
+    Lesson 10
+      Full project cycle
+```
