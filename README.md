@@ -6,9 +6,8 @@
 
 | | |
 | --- | --- |
-| **Уровень / Level** | Начальный / Beginner |
-| **Автор / Author** | Javlonbek Saydullaev — [github.com/Saydullayev017](https://github.com/Saydullayev017) |
-| **Сайт / Website** | [jlearn.space](https://jlearn.space) |
+| **Author** | Javlonbek Saydullaev — [github.com/Saydullayev017](https://github.com/Saydullayev017) |
+| **Website** | [jlearn.space](https://jlearn.space) |
 | **YouTube** | [@JLearnProgramming](https://www.youtube.com/@JLearnProgramming) |
 
 ---
