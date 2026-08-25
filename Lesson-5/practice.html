@@ -1,120 +1,120 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Урок 5 — Таблицы</title>
+    <title>Lesson 5 — Tables</title>
 </head>
 <body>
 
-    <h1>Таблицы в HTML</h1>
+    <h1>Tables in HTML</h1>
 
-    <h2>Простая таблица: список учеников</h2>
+    <h2>Simple Table: Student List</h2>
     <table>
         <tr>
-            <th>Имя</th>
-            <th>Возраст</th>
-            <th>Город</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
         </tr>
         <tr>
-            <td>Азиз</td>
+            <td>Aziz</td>
             <td>21</td>
-            <td>Ташкент</td>
+            <td>Tashkent</td>
         </tr>
         <tr>
-            <td>Дилноза</td>
+            <td>Dilnoza</td>
             <td>19</td>
-            <td>Алмалык</td>
+            <td>Almalik</td>
         </tr>
     </table>
 
-    <h2>Таблица товаров с итогами</h2>
+    <h2>Product Table with Totals</h2>
     <table>
         <thead>
             <tr>
-                <th>Товар</th>
-                <th>Цена</th>
-                <th>Количество</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Ноутбук</td>
-                <td>8 000 000 сум</td>
+                <td>Laptop</td>
+                <td>$800</td>
                 <td>1</td>
             </tr>
             <tr>
-                <td>Мышь</td>
-                <td>150 000 сум</td>
+                <td>Mouse</td>
+                <td>$15</td>
                 <td>2</td>
             </tr>
             <tr>
-                <td>Клавиатура</td>
-                <td>350 000 сум</td>
+                <td>Keyboard</td>
+                <td>$35</td>
                 <td>1</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td><strong>Итого</strong></td>
-                <td><strong>8 850 000 сум</strong></td>
+                <td><strong>Total</strong></td>
+                <td><strong>$865</strong></td>
                 <td><strong>4</strong></td>
             </tr>
         </tfoot>
     </table>
 
-    <h2>Таблица с colspan</h2>
+    <h2>Table with colspan</h2>
     <table>
         <tr>
-            <th colspan="2">Контактная информация</th>
+            <th colspan="2">Contact Information</th>
         </tr>
         <tr>
             <td>Email</td>
             <td>info@saydullayev.fun</td>
         </tr>
         <tr>
-            <td>Телефон</td>
+            <td>Phone</td>
             <td>+998 90 123-45-67</td>
         </tr>
     </table>
 
-    <h2>Таблица с rowspan</h2>
+    <h2>Table with rowspan</h2>
     <table>
         <tr>
-            <th>Имя</th>
-            <th>Предмет</th>
-            <th>Оценка</th>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Grade</th>
         </tr>
         <tr>
-            <td rowspan="2">Азиз</td>
-            <td>Математика</td>
-            <td>5</td>
+            <td rowspan="2">Aziz</td>
+            <td>Mathematics</td>
+            <td>A</td>
         </tr>
         <tr>
-            <td>Физика</td>
-            <td>4</td>
+            <td>Physics</td>
+            <td>B</td>
         </tr>
     </table>
 
-    <h2>Оцениваемая таблица с caption и scope</h2>
+    <h2>Accessible Table with caption and scope</h2>
     <table>
-        <caption>Оценки учеников по предметам</caption>
+        <caption>Student Grades by Subject</caption>
         <thead>
             <tr>
-                <th scope="col">Имя</th>
-                <th scope="col">Математика</th>
-                <th scope="col">Физика</th>
+                <th scope="col">Name</th>
+                <th scope="col">Mathematics</th>
+                <th scope="col">Physics</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th scope="row">Азиз</th>
-                <td>5</td>
-                <td>4</td>
+                <th scope="row">Aziz</th>
+                <td>A</td>
+                <td>B</td>
             </tr>
             <tr>
-                <th scope="row">Дилноза</th>
-                <td>4</td>
-                <td>5</td>
+                <th scope="row">Dilnoza</th>
+                <td>B</td>
+                <td>A</td>
             </tr>
         </tbody>
     </table>

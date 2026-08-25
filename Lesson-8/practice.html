@@ -1,85 +1,85 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Урок 8 — Доступность</title>
+    <title>Lesson 8 — Accessibility</title>
 </head>
 <body>
 
-    <h1>Доступность (Accessibility)</h1>
+    <h1>Accessibility</h1>
 
-    <h2>Кнопки с aria-label</h2>
-    <button type="button" aria-label="Закрыть окно">&times;</button>
+    <h2>Buttons with aria-label</h2>
+    <button type="button" aria-label="Close window">&times;</button>
     <a href="https://github.com/Saydullayev017"
-       aria-label="Мой профиль на GitHub"
+       aria-label="My GitHub profile"
        target="_blank"
        rel="noopener noreferrer">
         <img src="images/github-icon.svg" alt="" width="32">
     </a>
 
-    <h2>Уведомления с role</h2>
+    <h2>Alerts with role</h2>
     <div role="alert">
-        <strong>Внимание:</strong> файл не был сохранён. Пожалуйста, попробуйте снова.
+        <strong>Warning:</strong> the file was not saved. Please try again.
     </div>
-    <button type="submit">Отправить</button>
+    <button type="submit">Submit</button>
 
-    <h2>Контраст и цвет</h2>
-    <p style="color: red;"><strong>Ошибка:</strong> поле заполнено неверно. Проверьте формат email.</p>
+    <h2>Contrast and Color</h2>
+    <p style="color: red;"><strong>Error:</strong> the field was filled in incorrectly. Please check the email format.</p>
 
-    <h2>Примеры tabindex</h2>
-    <a href="https://example.com">Обычная ссылка</a><br>
-    <button type="button">Обычная кнопка</button><br><br>
-    <div tabindex="0" role="button" aria-label="Развернуть подробности"
+    <h2>tabindex Examples</h2>
+    <a href="https://example.com">Regular link</a><br>
+    <button type="button">Regular button</button><br><br>
+    <div tabindex="0" role="button" aria-label="Expand details"
          style="padding: 8px 16px; border: 2px solid #333; display: inline-block; cursor: pointer;">
-        Подробнее ▼
+        More details ▼
     </div>
     <div tabindex="-1" id="modal-title" style="margin-top: 20px;">
-        Заголовок модального окна (не в Tab-навигации)
+        Modal window title (not in Tab navigation)
     </div>
 
-    <h2>Пример правильной иерархии заголовков</h2>
-    <h3>Рецепт плова</h3>
-    <h4>Ингредиенты</h4>
-    <h4>Пошаговое приготовление</h4>
-    <h5>Подготовка риса</h5>
-    <h5>Обжарка мяса</h5>
-    <h5>Финальная варка</h5>
-    <h3>Советы по подаче</h3>
+    <h2>Correct Heading Hierarchy Example</h2>
+    <h3>Pilaf Recipe</h3>
+    <h4>Ingredients</h4>
+    <h4>Step-by-Step Instructions</h4>
+    <h5>Preparing the Rice</h5>
+    <h5>Browning the Meat</h5>
+    <h5>Final Simmering</h5>
+    <h3>Serving Tips</h3>
 
-    <h2>Доступная таблица</h2>
+    <h2>Accessible Table</h2>
     <table>
-        <caption>Сравнение технологий</caption>
+        <caption>Technology Comparison</caption>
         <thead>
             <tr>
-                <th scope="col">Технология</th>
-                <th scope="col">Назначение</th>
+                <th scope="col">Technology</th>
+                <th scope="col">Purpose</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <th scope="row">HTML</th>
-                <td>Структура</td>
+                <td>Structure</td>
             </tr>
             <tr>
                 <th scope="row">CSS</th>
-                <td>Оформление</td>
+                <td>Styling</td>
             </tr>
             <tr>
                 <th scope="row">JavaScript</th>
-                <td>Поведение</td>
+                <td>Behavior</td>
             </tr>
         </tbody>
     </table>
 
-    <h2>Доступная форма</h2>
+    <h2>Accessible Form</h2>
     <form action="#">
         <fieldset>
-            <legend>Обратная связь</legend>
-            <label for="fb-name">Имя:</label><br>
+            <legend>Feedback</legend>
+            <label for="fb-name">Name:</label><br>
             <input type="text" id="fb-name" name="fb-name" required><br><br>
-            <label for="fb-msg">Сообщение:</label><br>
+            <label for="fb-msg">Message:</label><br>
             <textarea id="fb-msg" name="fb-msg" rows="3" required></textarea><br><br>
-            <button type="submit">Отправить</button>
+            <button type="submit">Submit</button>
         </fieldset>
     </form>
 

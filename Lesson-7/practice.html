@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Урок 7 — Формы. Часть 2</title>
+    <title>Lesson 7 — Forms. Part 2</title>
 </head>
 <body>
 
-    <h1>Формы: сложные элементы и валидация</h1>
+    <h1>Forms: Advanced Elements and Validation</h1>
 
     <form action="#" method="post">
 
-        <label for="country">Страна:</label><br>
+        <label for="country">Country:</label><br>
         <select id="country" name="country">
-            <option value="uz" selected>Узбекистан</option>
-            <option value="kz">Казахстан</option>
-            <option value="kg">Кыргызстан</option>
+            <option value="uz" selected>Uzbekistan</option>
+            <option value="kz">Kazakhstan</option>
+            <option value="kg">Kyrgyzstan</option>
         </select><br><br>
 
-        <label for="course">Выберите курс:</label><br>
+        <label for="course">Choose a course:</label><br>
         <select id="course" name="course">
             <optgroup label="Frontend">
                 <option value="html">HTML</option>
@@ -30,52 +30,52 @@
             </optgroup>
         </select><br><br>
 
-        <label for="bio">О себе:</label><br>
+        <label for="bio">About me:</label><br>
         <textarea id="bio" name="bio" rows="4" cols="40"
-                  placeholder="Расскажите немного о себе..."></textarea><br><br>
+                  placeholder="Tell us a little about yourself..."></textarea><br><br>
 
         <fieldset>
-            <legend>Контактные данные</legend>
-            <label for="phone">Телефон:</label><br>
+            <legend>Contact Details</legend>
+            <label for="phone">Phone:</label><br>
             <input type="tel" id="phone" name="phone" placeholder="+998 XX XXX-XX-XX"><br><br>
             <label for="contact-email">Email:</label><br>
             <input type="email" id="contact-email" name="contact-email"><br>
         </fieldset><br>
 
         <fieldset>
-            <legend>Уровень подготовки</legend>
+            <legend>Skill Level</legend>
             <input type="radio" id="beg" name="level" value="beginner">
-            <label for="beg">Начинающий</label><br>
+            <label for="beg">Beginner</label><br>
             <input type="radio" id="mid" name="level" value="intermediate">
-            <label for="mid">Средний</label><br>
+            <label for="mid">Intermediate</label><br>
             <input type="radio" id="adv" name="level" value="advanced">
-            <label for="adv">Продвинутый</label>
+            <label for="adv">Advanced</label>
         </fieldset><br>
 
-        <button type="submit">Отправить форму</button>
-        <button type="reset">Очистить</button>
+        <button type="submit">Submit Form</button>
+        <button type="reset">Clear</button>
 
         <br><br>
 
-        <h2>Поля с валидацией</h2>
+        <h2>Fields with Validation</h2>
 
-        <label for="age2">Возраст (от 16 до 99):</label><br>
+        <label for="age2">Age (16 to 99):</label><br>
         <input type="number" id="age2" name="age2" min="16" max="99"><br><br>
 
-        <label for="username">Имя (макс. 20 символов):</label><br>
+        <label for="username">Name (max 20 characters):</label><br>
         <input type="text" id="username" name="username" maxlength="20"><br><br>
 
-        <label for="student-id">Номер студенческого (ровно 7 цифр):</label><br>
+        <label for="student-id">Student ID (exactly 7 digits):</label><br>
         <input type="text" id="student-id" name="student-id"
                pattern="[0-9]{7}"
-               title="Введите ровно 7 цифр"><br><br>
+               title="Enter exactly 7 digits"><br><br>
 
-        <label for="name-ru">Имя (только кириллица):</label><br>
-        <input type="text" id="name-ru" name="name-ru"
-               pattern="[А-Яа-яЁё\s]+"
-               title="Введите имя только кириллическими буквами"><br><br>
+        <label for="name-alpha">Name (letters only):</label><br>
+        <input type="text" id="name-alpha" name="name-alpha"
+               pattern="[A-Za-z\s]+"
+               title="Enter name using letters only"><br><br>
 
-        <button type="submit">Отправить с валидацией</button>
+        <button type="submit">Submit with Validation</button>
 
     </form>
 
