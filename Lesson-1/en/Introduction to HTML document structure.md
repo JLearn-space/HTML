@@ -41,6 +41,23 @@ The analogy continues: if HTML is the house framework, then:
 
 We start with the framework because without it, neither design nor automation makes sense — there's nothing to "hang" them on.
 
+```mermaid
+mindmap
+  root((Web))
+    HTML
+      Structure
+      Content
+      Semantics
+    CSS
+      Styling
+      Layout
+      Responsive
+    JavaScript
+      Interactivity
+      DOM Manipulation
+      Events
+```
+
 **Important to understand right away:** HTML is a **markup language**, not a programming language. It has no "if" conditions, no loops, no calculations. It simply describes the structure of the document using tags.
 
 ---
@@ -204,6 +221,21 @@ Inside `<head>` in this lesson we use two tags:
 This is where **everything the user sees** is located: text, images, buttons, links, tables. All course content starting from the second lesson will be added here.
 
 **Analogy:** if `<head>` is the house's technical passport, then `<body>` is all the rooms where people actually live: living room, kitchen, bedroom. All tags we'll study later (headings, paragraphs, images, forms) are placed inside `<body>`.
+
+```mermaid
+flowchart TD
+    A["&lt;!DOCTYPE html&gt;"] --> B["&lt;html lang='en'&gt;"]
+    B --> C["&lt;head&gt;"]
+    B --> D["&lt;body&gt;"]
+    C --> C1["&lt;meta charset&gt;"]
+    C --> C2["&lt;title&gt;"]
+    C --> C3["&lt;link&gt; / &lt;script&gt;"]
+    D --> D1["Visible Content"]
+    D1 --> D1a["headings"]
+    D1 --> D1b["paragraphs"]
+    D1 --> D1c["images"]
+    D1 --> D1d["links"]
+```
 
 ---
 

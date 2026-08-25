@@ -95,6 +95,21 @@ Jadvalning qolgan barcha katakchalari, o'z ma'lumotlarini (sarlavhalarni emas) s
 
 **O'xshatish:** sinf jurnalini tasavvur qiling. Fan nomlari yozilgan yuqori qator ("Matematika", "Fizika", "Tarix") — bu `<th>`, katakchalardagi baholar esa — `<td>`. Birinchi ustundagi o'quvchilar nomlari ham `<th>` (qator sarlavhalari), qolgan barchasi esa `<td>`.
 
+```mermaid
+flowchart TD
+    A["table"] --> B["thead"]
+    A --> C["tbody"]
+    A --> D["tfoot"]
+    B --> B1["tr"]
+    B1 --> B1a["th — header cell"]
+    C --> C1["tr"]
+    C1 --> C1a["td — data cell"]
+    C --> C2["tr"]
+    C2 --> C2a["td — data cell"]
+    D --> D1["tr"]
+    D1 --> D1a["td — summary cell"]
+```
+
 ### `<th>` faqat tepada emas — chapda ham bo'lishi mumkin
 
 ```html
@@ -263,6 +278,20 @@ Ba'zan bitta katakcha bir nechta ustun yoki qator bo'ylab "cho'zilishi" kerak �
 `rowspan="2"` — "bu katakcha balandlikda ikki qatorning o'rnini egallaydi" degani — shuning uchun "Aziz" nomi ikki marta takrorlanmaydi, ikkala bahosiga ham bir marta ko'rsatiladi.
 
 **`colspan`/`rowspan` ishlatishda muhim qoida:** siz katakchani bir nechta ustun/qatorga birlashtirsangiz, shu qator/ustunda oddiy katakchalar **kamroq** bo'lishi kerak — birlashtirilgan katakcha "yegan" miqdordagicha kamroq. `rowspan="2"` misolida ikkinchi `<tr>` qatori faqat 2 katakchadan iborat (`<td>Fizika</td><td>4</td>`), 3 ta emas — chunki birinchi katakchaning o'rnini allaqachon birinchi qatardagi birlashtirilgan katakcha "egallagan".
+
+```mermaid
+flowchart LR
+    subgraph colspan["colspan — Horizontal"]
+        direction TB
+        C1["Cell 1"] --- C2["Cell 2"]
+        C3["Merged Cell spans 2 cols"]
+    end
+    subgraph rowspan["rowspan — Vertical"]
+        direction TB
+        R1["Cell A"] --- R2["Cell B"]
+        R3["Merged Cell\nspans 2 rows"]
+    end
+```
 
 ---
 

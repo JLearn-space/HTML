@@ -112,6 +112,14 @@ Faylning oddiy nomi — brauzer uni joriy fayl yonida qidiradi.
 
 Boshidagi slesh "sayt ildizi" degan ma'noni anglatadi — agar sizda masalan `mysite.uz` sayti bo'lsa, `/` havolasi `mysite.uz` ga olib boradi, yonidagi faylga emas.
 
+```mermaid
+flowchart LR
+    A["Current File"] -->|"about.html"| B["Same Folder"]
+    A -->|"images/photo.jpg"| C["Subfolder"]
+    A -->|"../index.html"| D["Parent Folder"]
+    A -->|"/"| E["Site Root"]
+```
+
 ### Qachon qaysini ishlatish
 
 |Holat|Qaysi yo'l|
@@ -121,6 +129,20 @@ Boshidagi slesh "sayt ildizi" degan ma'noni anglatadi — agar sizda masalan `my
 |Loyihangizdagi rasmga havola|Nisbiy|
 
 **Nima uchun bu muhim:** agar o'z sahifalaringiz uchun absolyut yo'ldan foydalansangiz (masalan, `href="https://mysite.ru/about.html"` o'rniga `href="about.html"`) — sayt lokal ravishda ishlab chiqish paytida to'g'ri ishlashni to'xtatadi (u hali internetda shu domen ostida nashr etilmagan) va loyihani boshqa domen yoki hostingga ko'chirishni qiyinlashtiradi.
+
+```mermaid
+flowchart TD
+    A["Need a link?"] --> B{"External site?"}
+    B -->|Yes| C["Absolute path\nhttps://..."]
+    B -->|No| D{"Same page?"}
+    D -->|Yes| E["Anchor link\n#id"]
+    D -->|No| F{"Your own project?"}
+    F -->|Yes| G["Relative path\nabout.html"]
+    F -->|No| H{"Email?"}
+    H -->|Yes| I["mailto:"]
+    H -->|No| J{"Phone?"}
+    J -->|Yes| K["tel:"]
+```
 
 ---
 

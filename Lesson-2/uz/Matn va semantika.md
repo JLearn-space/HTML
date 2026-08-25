@@ -47,6 +47,26 @@ HTML'da bitta sarlavha darajasi bor: `<h1>` (eng muhim, "kitob nomi") dan `<h6>`
 
 **Nima uchun bu muhim, "chiroy uchun" emas:** sarlavhalar faqat matnning vizual o'lchami emas. Ekran o'quvchilari (ko'zi ojizlar uchun dasturlar — bu haqida 8-darda batafsil) sarlavhalar bo'yicha sahifaning "xaritasini" quradi va foydalanuvchiga darhol bo'limlar orasida o'tish imkonini beradi. Agar `<h3>` ni faqat "kichikroq matn kerak" degan sababga ko'ra ishlatsangiz, haqiqatan ham pastki bo'lim bo'lmagan holda — bu xaritani foydalanuvchi uchun buzasiz.
 
+```mermaid
+mindmap
+  root((Page))
+    h1
+      Page Title
+      Only one per page
+    h2
+      Section 1
+      Section 2
+    h3
+      Subsection 1.1
+      Subsection 1.2
+    h4
+      Detail
+    h5
+      Fine Detail
+    h6
+      Smallest
+```
+
 ---
 
 ## 2-blok. Abzatslar va satr o'tkazishlar: p, br, hr
@@ -383,6 +403,20 @@ Odatda mualliflik huquqini, aloqa ma'lumotlarini, ijtimoiy tarmoqlarga havolalar
 Tuzilishga e'tibor bering: `<header>` va `<footer>` tashqarida, `<main>` sahifada bitta va asosiy kontentni o'z ichiga oladi, `<article>` va `<aside>` allaqachon `<main>` ichida.
 
 **Muhim:** semantik teglar `<div>` ning to'liq o'rnini bosmaydi. `<div>` hali ham qo'llaniladi, blokqa hech qanday semantik ma'no mos kelmasa (masalan, oddiy CSS stilizatsiya uchun o'ram). Lekin blokning aniq mazmunli maqsadi bo'lsa — semantik tegni afzal ko'ring.
+
+```mermaid
+flowchart TD
+    A["body"] --> B["header"]
+    A --> C["main"]
+    A --> D["footer"]
+    B --> B1["h1 — Logo / Title"]
+    B --> B2["nav — Navigation"]
+    C --> C1["article — Main Content"]
+    C --> C2["aside — Sidebar"]
+    C1 --> C1a["section"]
+    C1 --> C1b["h2, p, ul"]
+    D --> D1["Copyright, Links"]
+```
 
 ---
 

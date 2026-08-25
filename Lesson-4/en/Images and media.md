@@ -160,6 +160,17 @@ A modern format from Google that combines the advantages of JPEG and PNG — goo
 | SVG    | Icons, logos (vector graphics)              | Yes          | Very small for simple graphics         |
 | WebP   | Universal — photos and graphics             | Yes          | Usually smaller than JPEG/PNG          |
 
+```mermaid
+flowchart TD
+    A["Image needed"] --> B{"Photograph?"}
+    B -->|Yes| C["JPEG or WebP"]
+    B -->|No| D{"Need transparency?"}
+    D -->|Yes| E{"Simple logo/icon?"}
+    D -->|No| F["JPEG"]
+    E -->|Yes| G["SVG"]
+    E -->|No| H["PNG or WebP"]
+```
+
 ---
 
 ### Common beginner mistakes
@@ -221,6 +232,15 @@ Let's break it down:
 - `controls` — an attribute (without a value) that enables a visible control panel (play/pause, volume, seeking). Without it, the audio will load, but the user won't have visible playback controls.
 - `<source>` — a void tag inside `<audio>` pointing to a file. You can specify **multiple** `<source>` elements with different formats — the browser will pick the first supported format. This is necessary because not all browsers support all audio formats equally.
 - The text `Your browser does not support...` is a **fallback** that will only appear in very old browsers that don't understand the `<audio>` tag at all.
+
+```mermaid
+flowchart TD
+    A["Browser loads audio/video"] --> B{"Supports source 1?"}
+    B -->|Yes| C["Play source 1"]
+    B -->|No| D{"Supports source 2?"}
+    D -->|Yes| E["Play source 2"]
+    D -->|No| F["Show fallback text"]
+```
 
 ### `<video>` — video on the page
 

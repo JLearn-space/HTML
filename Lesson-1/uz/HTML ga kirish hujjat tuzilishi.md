@@ -41,6 +41,23 @@ Davomiy taqqoslash: agar HTML — uy karqasi bo'lsa, demak:
 
 Biz karqasdan boshlaymiz, chunki karqasiz na dizayn, na avtomatikaning ma'nosi bor — ularni osib qo'yadigan joy yo'q.
 
+```mermaid
+mindmap
+  root((Web))
+    HTML
+      Structure
+      Content
+      Semantics
+    CSS
+      Styling
+      Layout
+      Responsive
+    JavaScript
+      Interactivity
+      DOM Manipulation
+      Events
+```
+
 **Darhol tushunish kerak:** HTML — bu **belgilash tili**, dasturlash tili emas. Unda "agar" shartlari, sikllar, hisob-kitoblar yo'q. U faqat teglar yordamida hujjatning tuzilishini tasvirlaydi.
 
 ---
@@ -204,6 +221,21 @@ Bu yerda sahifa haqida **xizmat ma'lumotlari** joylashgan, ular to'g'ridan-to'g'
 Bu yerda **foydalanuvchi ko'radigan hamma narsa** joylashgan: matn, rasmlar, tugmalar, havolalar, jadvallar. Ikkinchi darsdan boshlangan kursning butun mazmuni shu yerga qo'shiladi.
 
 **Taqqoslash:** agar `<head>` — uyning texnik pasporti bo'lsa, `<body>` — bu haqiqatda yashaydigan barcha xonalar: mehmonxona, oshxona, yotoq xonasi. Keyinchalik o'rganadigan barcha teglar (sarlavhalar, abzatslar, rasmlar, shakllar) `<body>` ichiga joylashtiriladi.
+
+```mermaid
+flowchart TD
+    A["&lt;!DOCTYPE html&gt;"] --> B["&lt;html lang='en'&gt;"]
+    B --> C["&lt;head&gt;"]
+    B --> D["&lt;body&gt;"]
+    C --> C1["&lt;meta charset&gt;"]
+    C --> C2["&lt;title&gt;"]
+    C --> C3["&lt;link&gt; / &lt;script&gt;"]
+    D --> D1["Visible Content"]
+    D1 --> D1a["headings"]
+    D1 --> D1b["paragraphs"]
+    D1 --> D1c["images"]
+    D1 --> D1d["links"]
+```
 
 ---
 

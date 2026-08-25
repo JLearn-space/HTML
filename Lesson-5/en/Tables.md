@@ -95,6 +95,21 @@ All the remaining cells in the table that contain the actual data (not headers).
 
 **Analogy:** think of a gradebook. The top row with subject names ("Math," "Physics," "History") is `<th>`, and the actual grades in the cells are `<td>`. Similarly, the first column with student names is also `<th>` (row headers), and everything else inside is `<td>`.
 
+```mermaid
+flowchart TD
+    A["table"] --> B["thead"]
+    A --> C["tbody"]
+    A --> D["tfoot"]
+    B --> B1["tr"]
+    B1 --> B1a["th — header cell"]
+    C --> C1["tr"]
+    C1 --> C1a["td — data cell"]
+    C --> C2["tr"]
+    C2 --> C2a["td — data cell"]
+    D --> D1["tr"]
+    D1 --> D1a["td — summary cell"]
+```
+
 ### `<th>` isn't just at the top — it can be on the left too
 
 ```html
@@ -263,6 +278,20 @@ Sometimes a cell needs to "stretch" across multiple columns or rows — for exam
 `rowspan="2"` means "this cell takes up the height of two rows" — so the name "Aziz" isn't repeated twice, it appears once alongside both of his grades.
 
 **Important rule when using `colspan`/`rowspan`:** once you merge a cell across multiple columns/rows, that row/column must contain **fewer** regular cells — exactly as many fewer as the merged cell consumed. In the `rowspan="2"` example, the second `<tr>` contains only 2 cells (`<td>Physics</td><td>4</td>`), not 3 — because the first cell's spot is already "taken" by the merged cell from the first row.
+
+```mermaid
+flowchart LR
+    subgraph colspan["colspan — Horizontal"]
+        direction TB
+        C1["Cell 1"] --- C2["Cell 2"]
+        C3["Merged Cell spans 2 cols"]
+    end
+    subgraph rowspan["rowspan — Vertical"]
+        direction TB
+        R1["Cell A"] --- R2["Cell B"]
+        R3["Merged Cell\nspans 2 rows"]
+    end
+```
 
 ---
 

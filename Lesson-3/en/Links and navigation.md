@@ -112,6 +112,14 @@ Just the file name — the browser looks for it next to the current file.
 
 A leading slash means "site root" — if you have a site like `mysite.uz`, the `/` link will go to `mysite.uz`, not to an adjacent file.
 
+```mermaid
+flowchart LR
+    A["Current File"] -->|"about.html"| B["Same Folder"]
+    A -->|"images/photo.jpg"| C["Subfolder"]
+    A -->|"../index.html"| D["Parent Folder"]
+    A -->|"/"| E["Site Root"]
+```
+
 ### When to use which
 
 | Situation                                                 | Which path |
@@ -121,6 +129,20 @@ A leading slash means "site root" — if you have a site like `mysite.uz`, the `
 | Link to an image within your project                      | Relative   |
 
 **Why this matters:** if you use absolute paths for your own pages (for example, `href="https://mysite.ru/about.html"` instead of `href="about.html"`) — the site will stop working correctly during local development (before it's published online under that domain) and will complicate migrating the project to another domain or hosting.
+
+```mermaid
+flowchart TD
+    A["Need a link?"] --> B{"External site?"}
+    B -->|Yes| C["Absolute path\nhttps://..."]
+    B -->|No| D{"Same page?"}
+    D -->|Yes| E["Anchor link\n#id"]
+    D -->|No| F{"Your own project?"}
+    F -->|Yes| G["Relative path\nabout.html"]
+    F -->|No| H{"Email?"}
+    H -->|Yes| I["mailto:"]
+    H -->|No| J{"Phone?"}
+    J -->|Yes| K["tel:"]
+```
 
 ---
 

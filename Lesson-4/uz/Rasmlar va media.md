@@ -160,6 +160,17 @@ Google tomonidan yaratilgan zamonaviy format bo'lib, JPEG va PNG ning afzallikla
 | SVG    | Belgilar, logotip (vektorli grafika)           | Ha         | Oddiy grafika uchun juda kichik          |
 | WebP   | Universal — foto va grafika                    | Ha         | Odatda JPEG/PNG dan kichikroq            |
 
+```mermaid
+flowchart TD
+    A["Image needed"] --> B{"Photograph?"}
+    B -->|Yes| C["JPEG or WebP"]
+    B -->|No| D{"Need transparency?"}
+    D -->|Yes| E{"Simple logo/icon?"}
+    D -->|No| F["JPEG"]
+    E -->|Yes| G["SVG"]
+    E -->|No| H["PNG or WebP"]
+```
+
 ---
 
 ### Yangi boshlovchilarning ko'p uchraydigan xatolari
@@ -221,6 +232,15 @@ Tushuntiramiz:
 - `controls` — qiymatsiz attribut bo'lib, ko'rinadigan boshqaruv panelini (play/pause, balandlik, surish) yoqadi. Beksiz audio yuklanadi, lekin foydalanuvchida ko'rinadigan boshqaruv tugmalari bo'lmaydi.
 - `<audio>` ichidagi juftlikka kirmaydigan `<source>` tegi faylni ko'rsatadi. Turli formatlarda bir nechta `<source>` ko'rsatish mumkin — brauzer birinchi qo'llab-quvvatlanadigan formatni tanlaydi. Bu shuning uchun zarurki, barcha brauzerlar barcha audio formatlarni bir xil qo'llab-quvvatlamaydi.
 - `Sizning brauzeringiz qo'llab-quvvatlamaydi...` matni — bu **zaxira variant (fallback)**, faqat `<audio>` tegini umuman tushunmaydigan juda eski brauzerlarda ko'rsatiladi.
+
+```mermaid
+flowchart TD
+    A["Browser loads audio/video"] --> B{"Supports source 1?"}
+    B -->|Yes| C["Play source 1"]
+    B -->|No| D{"Supports source 2?"}
+    D -->|Yes| E["Play source 2"]
+    D -->|No| F["Show fallback text"]
+```
 
 ### `<video>` — sahifada video
 

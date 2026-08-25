@@ -47,6 +47,26 @@ In HTML there are six heading levels: from `<h1>` (most important, "book title")
 
 **Why this matters, and isn't just "for looks":** headings are not just about visual text size. Screen readers (programs for visually impaired users — more on this in lesson 8 about accessibility) build a "map" of the page from headings and let the user jump between sections immediately. If you use `<h3>` just because "smaller text is needed," not because it's actually a subsection — you'll break this map for someone who relies on it.
 
+```mermaid
+mindmap
+  root((Page))
+    h1
+      Page Title
+      Only one per page
+    h2
+      Section 1
+      Section 2
+    h3
+      Subsection 1.1
+      Subsection 1.2
+    h4
+      Detail
+    h5
+      Fine Detail
+    h6
+      Smallest
+```
+
 ---
 
 ## Block 2. Paragraphs and line breaks: p, br, hr
@@ -383,6 +403,20 @@ Usually contains copyright, contact information, social media links.
 Notice the structure: `<header>` and `<footer>` are on the outside, `<main>` is the only one on the page and contains the main content, `<article>` and `<aside>` are inside `<main>`.
 
 **Important:** semantic tags are **not a complete replacement** for `<div>`. `<div>` is still used when no semantic value fits the block (for example, just a wrapper for CSS styling). But if a block has a clear semantic purpose — prefer the semantic tag.
+
+```mermaid
+flowchart TD
+    A["body"] --> B["header"]
+    A --> C["main"]
+    A --> D["footer"]
+    B --> B1["h1 — Logo / Title"]
+    B --> B2["nav — Navigation"]
+    C --> C1["article — Main Content"]
+    C --> C2["aside — Sidebar"]
+    C1 --> C1a["section"]
+    C1 --> C1b["h2, p, ul"]
+    D --> D1["Copyright, Links"]
+```
 
 ---
 
