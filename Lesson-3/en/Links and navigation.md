@@ -443,3 +443,5 @@ Today you learned:
 - Anchor links (`href="#id"`) navigate to a specific place on the page via the `id` on the target element.
 - `mailto:` and `tel:` create links for quickly sending an email or making a call.
 - You built your first multi-page website with a unified navigation menu.
+
+➡ **Next lesson:** [Images and media](../../Lesson-4/en/Images%20and%20media.md)

@@ -384,3 +384,5 @@ Today you learned:
 - `<thead>`, `<tbody>`, `<tfoot>` semantically divide the table into header, body, and footer.
 - `colspan` merges cells horizontally (columns), `rowspan` vertically (rows).
 - `<caption>` gives the table a title, and `scope="col"`/`scope="row"` on `<th>` associates headers with data for screen readers.
+
+➡ **Next lesson:** [Forms. Part 1](../../Lesson-6/en/Forms%20part%201.md)

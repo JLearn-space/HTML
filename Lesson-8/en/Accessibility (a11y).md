@@ -290,3 +290,5 @@ Today you learned:
 - Text and background contrast is critical for readability — and it's important not to rely only on color to convey meaning.
 - `tabindex="0"`/`"-1"` control whether an element participates in Tab navigation — but positive numbers should be avoided in favor of logical code order.
 - The `h1`–`h6` heading hierarchy works as the page's "skeleton," allowing the screen reader (and any user) to quickly navigate the content.
+
+➡ **Next lesson:** [Meta tags, SEO, linking CSS and JS](../../Lesson-9/en/Meta%20tags,%20SEO,%20linking%20CSS%20and%20JS.md)

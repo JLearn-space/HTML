@@ -311,3 +311,5 @@ Today you learned:
 - `<figure>`/`<figcaption>` — a semantic pair that binds an image to its caption.
 - `<audio>` and `<video>` embed media through one or more `<source>` elements, with the `controls` attribute for the playback control panel.
 - A favicon is connected via `<link rel="icon">` inside `<head>` and appears on the browser tab.
+
+➡ **Next lesson:** [Tables](../../Lesson-5/en/Tables.md)

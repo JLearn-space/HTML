@@ -321,3 +321,5 @@ Bugun siz quyidagilarni o'rgandingiz:
 - Har bir HTML-hujjat `<!DOCTYPE html>` dan boshlanadi va `<html>` dan iborat, uning ichida `<head>` (xizmat ma'lumotlari) va `<body>` (ko'rinadigan mazmun) joylashgan.
 - Siz VS Code va Live Server ni sozlashni va brauzer DevToolsidan foydalanishni o'rgandingiz.
 - Siz o'z birinchi HTML-sahifangizni yaratdiz va ochdiz.
+
+➡ **Keyingi dars:** [Matn va semantika](../../Lesson-2/uz/Matn%20va%20semantika.md)

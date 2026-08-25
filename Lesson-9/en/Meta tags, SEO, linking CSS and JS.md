@@ -331,3 +331,5 @@ Today you learned:
 - CSS connects via `<link rel="stylesheet">`, JS via `<script src="...">`, with optional `defer`/`async` attributes for loading optimization.
 - The W3C Validator checks code against official HTML standards and finds hidden errors.
 - The standard project structure — HTML in the root, separate `css/`, `js/`, `images/` folders — makes site maintenance easier.
+
+➡ **Next lesson:** [Final project](../../Lesson-10/en/Final%20project%20from%20planning%20to%20publication.md)

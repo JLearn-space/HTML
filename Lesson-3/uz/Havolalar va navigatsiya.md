@@ -443,3 +443,5 @@ Bugun siz quyidagilarni o'rgandingiz:
 - Ankor havolalar (`href="#id"`) maqsad elementining `id`si orqali sahifaning ma'lum joyiga o'tkazadi.
 - `mailto:` va `tel:` tez xat yuborish yoki qo'ng'iroq qilish uchun havolalar yaratadi.
 - Siz birinchi navigatsiya menyusiga ega ko'p sahifali saytingizni yig'diz.
+
+➡ **Keyingi dars:** [Rasmlar va media](../../Lesson-4/uz/Rasmlar%20va%20media.md)

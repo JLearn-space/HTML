@@ -311,3 +311,5 @@ Bugun siz o'rgandingiz:
 - `<figure>`/`figcaption` — rasmni uning yorlig'i bilan bog'laydigan semantik juftlik.
 - `<audio>` va `<video>` bir yoki bir nechta `<source>` orqali media joylashtiradi, boshqaruv paneli uchun `controls` atributi bilan.
 - Favicon `<head>` ichidagi `<link rel="icon">` orqali ulanadi va brauzer tabida ko'rsatiladi.
+
+➡ **Keyingi dars:** [Jadvallar](../../Lesson-5/uz/Jadvallar.md)

@@ -321,3 +321,5 @@ Today you learned:
 - Every HTML document starts with `<!DOCTYPE html>` and consists of `<html>`, inside which are `<head>` (service information) and `<body>` (visible content).
 - You set up VS Code with Live Server and learned to use browser DevTools.
 - You created and opened your first HTML page.
+
+➡ **Next lesson:** [Text and semantics](../../Lesson-2/en/Text%20and%20semantics.md)

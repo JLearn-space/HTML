@@ -440,3 +440,5 @@ Today you learned:
 - `<strong>` and `<em>` convey semantic importance and emphasis — unlike the outdated `<b>`/`<i>`, which only change appearance without meaning.
 - Three types of lists: `<ul>` (order doesn't matter), `<ol>` (order matters), `<dl>` (term — definition).
 - Semantic tags (`header`, `nav`, `main`, `section`, `article`, `aside`, `footer`) replace "<div> soup" and make the page structure understandable to browsers, search engines, and screen readers.
+
+➡ **Next lesson:** [Links and navigation](../../Lesson-3/en/Links%20and%20navigation.md)

@@ -338,3 +338,5 @@ Bugun siz o'rgandingiz:
 - `checkbox` — bir nechta variantni tanlash mumkin (mustaqil maydonlar), `radio` — guruhdan faqat bitta (bir xil `name` orqali birlashtirilgan).
 - `placeholder` — yo'qoluvchi ko'rsatma, forma bilan yuborilmaydi; `value` — maydonning haqiqiy tarkibi, har doim yuboriladi.
 - `required` maydonni bitta qator JavaScript siz majburiy qiladi.
+
+➡ **Keyingi dars:** [Formatlar. Qism 2](../../Lesson-7/uz/Formatlar%20qism-2.md)

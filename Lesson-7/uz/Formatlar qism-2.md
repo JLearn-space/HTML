@@ -373,3 +373,5 @@ Bugun siz quyidagilarni bilib oldingiz:
 - `<fieldset>`/`<legend>` bog'liq forma maydonlarini semantik jihatdan guruhlaydi - radio guruhlari uchun juda foydali.
 - `<button>` `<input type="submit">` dan moslashuvchanroq - ichki mazmuni qo'llab-quvvatlaydi, lekin `type` ni aniq ko'rsatishni talab qiladi.
 - `min`/`max` sonlar va sanalar diapazonini cheklaydi, `maxlength` matn uzunligini cheklaydi, `pattern` shablon bo'yicha tekshiradi (tushunarli maslahat uchun majburiy `title` bilan).
+
+➡ **Keyingi dars:** [Mavjudlik (a11y)](../../Lesson-8/uz/Mavjudlik%20(a11y).md)

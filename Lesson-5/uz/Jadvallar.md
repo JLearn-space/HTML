@@ -384,3 +384,5 @@ Bugun siz o'rgandingiz:
 - `<thead>`, `<tbody>`, `<tfoot>` jadvalni mazmuniy jihatdan sarlavha, tana va pastki qismga ajratadi.
 - `colspan` katakchalarni gorizontal (ustunlar), `rowspan` — vertikal (qatorlar) yo'nalishda birlashtiradi.
 - `<caption>` jadvalga nom beradi, `<th>` dagi `scope="col"`/`scope="row"` esa ekran o'quvchilari uchun sarlavhalarni ma'lumotlar bilan bog'laydi.
+
+➡ **Keyingi dars:** [Formatlar. Qism 1](../../Lesson-6/uz/Formatlar%20qism-1.md)

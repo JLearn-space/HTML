@@ -440,3 +440,5 @@ Bugun siz quyidagilarni o'rgandingiz:
 - `<strong>` va `<em>` mazmun muhimligini va aksentni ifodalaydi — eskirgan `<b>`/`<i>` dan farqli o'laroq, ular faqat tashqi ko'rinishni o'zgartiradi, ma'noni emas.
 - Uch xil ro'yxat: `<ul>` (tartib muhim emas), `<ol>` (tartib muhim), `<dl>` (atama — ta'rif).
 - Semantik teglar (`header`, `nav`, `main`, `section`, `article`, `aside`, `footer`) "<div> shorbasini" almashtiradi va sahifa tuzilishini brauzer, qidiruv tizimlari va ekran o'quvchilari uchun tushunarli qiladi.
+
+➡ **Keyingi dars:** [Havolalar va navigatsiya](../../Lesson-3/uz/Havolalar%20va%20navigatsiya.md)

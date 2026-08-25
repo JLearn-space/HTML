@@ -373,3 +373,5 @@ Today you learned:
 - `<fieldset>`/`<legend>` semantically group related form fields — especially useful for radio button groups.
 - `<button>` is more flexible than `<input type="submit">` — supports nested content, but requires explicit `type` specification.
 - `min`/`max` limit number and date ranges, `maxlength` limits text length, `pattern` validates input against a template (with required `title` for a clear hint).
+
+➡ **Next lesson:** [Accessibility (a11y)](../../Lesson-8/en/Accessibility%20(a11y).md)

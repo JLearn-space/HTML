@@ -331,3 +331,5 @@ Bugun siz quyidagilarni bilib oldingiz:
 - CSS `<link rel="stylesheet">` orqali ulanadi, JS — `<script src="...">` orqali, yuklashni optimallashtirish uchun `defer`/`async` atributlari bilan.
 - W3C Validator kodni HTML rasmiy standartlariga mosligini tekshiradi va yashirin xatolarni topadi.
 - Standart loyiha tuzilmasi - ildizda HTML, alohida `css/`, `js/`, `images/` papkalar — saytni qo'llab-quvvatlashni osonlashtiradi.
+
+➡ **Keyingi dars:** [Yakuniy loyiha](../../Lesson-10/uz/Yakuniy%20loyiha%20rejalashtirishdan%20nashr%20etishgacha.md)

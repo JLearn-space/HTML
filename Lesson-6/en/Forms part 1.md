@@ -338,3 +338,5 @@ Today you learned:
 - `checkbox` — multiple options can be selected (independent fields), `radio` — only one from a group (unified by the same `name`).
 - `placeholder` — a disappearing hint, not sent with the form; `value` — the actual field content, always sent.
 - `required` makes a field mandatory without a single line of JavaScript.
+
+➡ **Next lesson:** [Forms. Part 2](../../Lesson-7/en/Forms%20part%202.md)

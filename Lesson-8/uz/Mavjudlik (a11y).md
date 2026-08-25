@@ -290,3 +290,5 @@ Bugun siz quyidagilarni bilib oldingiz:
 - Matn va fon kontrasti o'qilishi uchun juda muhim — va axborotni uzatishda faqat rangga ishonmaslik kerak.
 - `tabindex="0"`/`"-1"` elementning Tab navigatsiyasiga kirishini boshqaradi — lekin musbat sonlardan qochish kerak, kodning mantiqiy tartibiga ishonish lozim.
 - `h1`–`h6` sarlavhalar ierarxiyasi sahifaning "skeleti" sifatida ishlaydi, ekran o'quvchisi (va har qanday foydalanuvchi) mazmun tezda yo'l topadi.
+
+➡ **Keyingi dars:** [Meta-teglar, SEO, CSS va JS bilan bog'lanish](../../Lesson-9/uz/Meta-teglar,%20SEO,%20CSS%20va%20JS%20bilan%20bog'lanish.md)
