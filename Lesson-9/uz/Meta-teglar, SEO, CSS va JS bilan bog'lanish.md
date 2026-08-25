@@ -203,10 +203,10 @@ Bugun ko'pincha moslashuvchanroq yondashuv ishlatiladi — `<script>` tegi `<hea
 
 ```mermaid
 flowchart TD
-    A["<script> in HTML"] --> B{"Has defer or async?"}
-    B -->|"defer"| C["Download in parallel, execute after HTML parsed"]
-    B -->|"async"| D["Download in parallel, execute immediately"]
-    B -->|"Neither"| E["Download and execute, blocks HTML parsing"]
+    A["HTML dagi <script>"] --> B{"defer yoki async bormi?"}
+    B -->|"defer"| C["Parallel yuklanadi, HTML qayta ishlangandan keyin bajariladi"]
+    B -->|"async"| D["Parallel yuklanadi, darhol bajariladi"]
+    B -->|"Yo'q"| E["Yuklanadi va bajariladi, HTML qayta ishlov berishni bloklaydi"]
 ```
 
 ---

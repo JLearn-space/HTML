@@ -4,14 +4,15 @@
 
 ```mermaid
 flowchart TD
-    A["Need a form element?"] --> B{"Text field?"}
-    B -->|"Single line"| C["input type=text/email/password/number/date"]
-    B -->|"Multiple lines"| D["textarea"]
-    E{"Choice needed?"} --> F{"Few options?"}
-    F -->|Yes| G["radio or checkbox"]
-    F -->|No| H["select + option"]
-    E --> I{"Grouping fields?"}
-    I -->|Yes| J["fieldset + legend"]
+    A["Forma elementi kerakmi?"] --> B{"Matn maydoni?"}
+    B -->|"Bir qator"| C["input type=text/email/password/number/date"]
+    B -->|"Bir necha qator"| D["textarea"]
+    D --> E{"Tanlov kerakmi?"}
+    E --> F{"Kam variantmi?"}
+    F -->|Ha| G["radio yoki checkbox"]
+    F -->|Yo'q| H["select + option"]
+    E --> I{"Maydonlarni guruhlash?"}
+    I -->|Ha| J["fieldset + legend"]
 ```
 
 ---
@@ -274,18 +275,18 @@ Tugmadagi matn `value` atributi orqali belgilanadi (oddiy maydonlarda ko'rgandek
 - **`type="reset"`** - barcha forma maydonlarini dastlabki qiymatlariga qaytaradi.
 - **`type="button"`** - ichki xulqiga ega bo'lmagan oddiy tugma; tugmaning xulqini keyinroq JavaScript orqali qo'shish kerak bo'lganda ishlatiladi (bu kursda biz bunday tugmalarni faol ishlatmaymiz, chunki JavaScript kurs dasturiga kirmaydi, lekin bu qiymatning mavjudligini bilish muhim).
 
-**Muhim ogohlantirish:** agar `<button>` `<form>` ichida va siz `type` ni **aniq ko'rsatmagan bo'lsangiz** - brauzer uni odatda `type="submit"** deb hisoblaydi. Bu kutilmagan forma yuborishiga olib kelishi mumkin, agar siz oddiy "boshqa narsa uchun tugma" qilmoqchi bo'lsangiz. **Qoida: doimo `<button>` da `type` ni aniq ko'rsating.**
+**Muhim ogohlantirish:** agar `<button>` `<form>` ichida va siz `type` ni **aniq ko'rsatmagan bo'lsangiz** - brauzer uni odatda `type="submit"` deb hisoblaydi. Bu kutilmagan forma yuborishiga olib kelishi mumkin, agar siz oddiy "boshqa narsa uchun tugma" qilmoqchi bo'lsangiz. **Qoida: doimo `<button>` da `type` ni aniq ko'rsating.**
 
 ```mermaid
 flowchart LR
-    A["<button>"] --> B{"type attribute?"}
-    B -->|"type=submit"| C["Sends form data"]
-    B -->|"type=reset"| D["Clears all fields"]
-    B -->|"type=button"| E["No default behavior — JS only"]
-    F["<input>"] --> G{"type attribute?"}
-    G -->|"type=submit"| H["Sends form data"]
-    G -->|"type=reset"| I["Clears all fields"]
-    G -->|"type=button"| J["No default behavior"]
+    A["<button>"] --> B{"type atributi?"}
+    B -->|"type=submit"| C["Forma ma'lumotlarini yuboradi"]
+    B -->|"type=reset"| D["Barcha maydonlarni tozalaydi"]
+    B -->|"type=button"| E["Standart xulq yo'q — faqat JS"]
+    F["<input>"] --> G{"type atributi?"}
+    G -->|"type=submit"| H["Forma ma'lumotlarini yuboradi"]
+    G -->|"type=reset"| I["Barcha maydonlarni tozalaydi"]
+    G -->|"type=button"| J["Standart xulq yo'q"]
 ```
 
 ---
@@ -349,7 +350,7 @@ Brauzer qiymat ko'rsatilgan chegaralardan tashqariga chiqsa, formani yuborishga 
 
 **`pattern` yonidagi `title` atributi haqida muhim:** u texnik jihatdan majburiy emas, lekin juda tavsiya etiladi - brauzer tekshiruv xatosida foydalanuvchiga suzuvchi maslahatda aynan `title` dan olingan matnni ko'rsatadi, nima kiritish kerakligini tushuntiradi. `title` bo'lmasa, foydalanuvchi faqat umumiy "Shablonga mos kelma di" ko'radi, bu juda kam foydali.
 
-**Yangi boshlovchilar uchun muhim eslatma:** muntazam ifodalarni chuqur yozish - bu ilg'or ko'nikma, amaliyotda ko'pincha alohida o'rganish yoki tayyor shablonlarni qidirishni talab qiladi (masalan, ma'lum mamlakatning telefon raqamini tekshirish). Bu darsda `pattern` ning asosiy **printsi ini** tushunish muhim, barcha mumkin bo'lgan shablonlarni yod olish emas.
+**Yangi boshlovchilar uchun muhim eslatma:** muntazam ifodalarni chuqur yozish - bu ilg'or ko'nikma, amaliyotda ko'pincha alohida o'rganish yoki tayyor shablonlarni qidirishni talab qiladi (masalan, ma'lum mamlakatning telefon raqamini tekshirish). Bu darsda `pattern` ning asosiy **printsipni** tushunish muhim, barcha mumkin bo'lgan shablonlarni yod olish emas.
 
 ---
 

@@ -203,10 +203,10 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A["<script> in HTML"] --> B{"Has defer or async?"}
-    B -->|"defer"| C["Download in parallel, execute after HTML parsed"]
-    B -->|"async"| D["Download in parallel, execute immediately"]
-    B -->|"Neither"| E["Download and execute, blocks HTML parsing"]
+    A["<script> в HTML"] --> B{"Есть defer или async?"}
+    B -->|"defer"| C["Скачивается параллельно, выполняется после разбора HTML"]
+    B -->|"async"| D["Скачивается параллельно, выполняется сразу"]
+    B -->|"Нет"| E["Скачивается и выполняется, блокируя разбор HTML"]
 ```
 
 ---

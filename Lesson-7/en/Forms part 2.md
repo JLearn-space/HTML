@@ -7,7 +7,8 @@ flowchart TD
     A["Need a form element?"] --> B{"Text field?"}
     B -->|"Single line"| C["input type=text/email/password/number/date"]
     B -->|"Multiple lines"| D["textarea"]
-    E{"Choice needed?"} --> F{"Few options?"}
+    D --> E{"Choice needed?"}
+    E --> F{"Few options?"}
     F -->|Yes| G["radio or checkbox"]
     F -->|No| H["select + option"]
     E --> I{"Grouping fields?"}

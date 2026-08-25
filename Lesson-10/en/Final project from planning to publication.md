@@ -303,9 +303,9 @@ _Method B — via Git from the terminal (if you're already familiar with Git):_
 ```bash
 git init
 git add .
-git commit -m "Первая публикация сайта"
+git commit -m "First site publication"
 git branch -M main
-git remote add origin https://github.com/ваш-username/my-portfolio.git
+git remote add origin https://github.com/your-username/my-portfolio.git
 git push -u origin main
 ```
 

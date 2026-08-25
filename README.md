@@ -24,7 +24,7 @@
 | **6** | [Формы. Часть 1](Lesson-6/ru/Формы%20ч-1.md) | [Formatlar. Qism 1](Lesson-6/uz/Formatlar%20qism-1.md) | [Forms. Part 1](Lesson-6/en/Forms%20part%201.md) |
 | **7** | [Формы. Часть 2](Lesson-7/ru/Формы%20ч-2.md) | [Formatlar. Qism 2](Lesson-7/uz/Formatlar%20qism-2.md) | [Forms. Part 2](Lesson-7/en/Forms%20part%202.md) |
 | **8** | [Доступность (a11y)](Lesson-8/ru/Доступность%20(a11y).md) | [Mavjudlik (a11y)](Lesson-8/uz/Mavjudlik%20(a11y).md) | [Accessibility (a11y)](Lesson-8/en/Accessibility%20(a11y).md) |
-| **9** | [Мета-теги, SEO, связь с CSS и JS](Lesson-9/ru/Мета-теги,%20SEO,%20связь%20с%20CSS,%20JS.md) | [Meta-teglar, SEO, CSS va JS bilan bog'lanish](Lesson-9/uz/Meta-tеглар,%20SEO,%20CSS%20va%20JS%20bilan%20bog'lanish.md) | [Meta tags, SEO, linking CSS and JS](Lesson-9/en/Meta%20tags,%20SEO,%20linking%20CSS%20and%20JS.md) |
+| **9** | [Мета-теги, SEO, связь с CSS и JS](Lesson-9/ru/Мета-теги,%20SEO,%20связь%20с%20CSS,%20JS.md) | [Meta-teglar, SEO, CSS va JS bilan bog'lanish](Lesson-9/uz/Meta-teglar,%20SEO,%20CSS%20va%20JS%20bilan%20bog'lanish.md) | [Meta tags, SEO, linking CSS and JS](Lesson-9/en/Meta%20tags,%20SEO,%20linking%20CSS%20and%20JS.md) |
 | **10** | [Итоговый проект](Lesson-10/ru/Итоговый%20проект%20от%20планирования%20до%20публикации.md) | [Yakuniy loyiha](Lesson-10/uz/Yakuniy%20loyiha%20rejalashtirishdan%20nashr%20etishgacha.md) | [Final project](Lesson-10/en/Final%20project%20from%20planning%20to%20publication.md) |
 
 ---

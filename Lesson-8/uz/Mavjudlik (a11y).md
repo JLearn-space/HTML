@@ -4,12 +4,12 @@
 
 ```mermaid
 mindmap
-  root((Accessibility))
-    Semantic HTML
+  root((Mavjudlik))
+    Semantik HTML
       head, nav, main, footer
-      h1-h6 hierarchy
+      h1-h6 ierarxiyasi
       label for id
-    ARIA attributes
+    ARIA atributlari
       role
       aria-label
       aria-labelledby
@@ -17,8 +17,8 @@ mindmap
       aria-hidden
       aria-live
     Media
-      alt for images
-      captions for video
+      Rasmlar uchun alt
+      Video uchun subtitrlar
 ```
 
 ---
@@ -52,7 +52,7 @@ mindmap
 
 **Oddiy qilib aytganda:** kirishda zinapoya bor, lekin pandus yo'q bino ni tasavvur qiling. Nogironlik aravachasidagi odam fizik jihatdan ichkariga kira olmaydi — binoning o'zi "yomon" degani uchun emas, balki barcha mehmonlarning xarakatlanishi bir xil emasligini hisobga olmaganligi uchun.
 
-Veb-mavjudlik (**accessibility**, qisqartirilgan **a11y** — 11 raqami "a" va "y" orasidagi o'tkazilgan harflar sonini bildiradi) — bu saytlar uchun xuddi shu printsi p. Sayt quyidagilar uchun bir xil darajada mos bo'lishi kerak:
+Veb-mavjudlik (**accessibility**, qisqartirilgan **a11y** — 11 raqami "a" va "y" orasidagi o'tkazilgan harflar sonini bildiradi) — bu saytlar uchun xuddi shu printsip. Sayt quyidagilar uchun bir xil darajada mos bo'lishi kerak:
 
 - **Ko'rmaydigan va zaif ko'ruvchi foydalanuvchilar**, ekran o'quvchilaridan (ekran mazmunini ovoz chiqarib o'qiydigan dasturlar) foydalanuvchi yoki sahifa masshtabini juda kattalashtiruvchi;
 - **Sichqoncha bilan ishlay olmaydigan odamlar** (motor buzilishi tufayli) va sahifani faqat klaviatura bilan boshqaruvchi;
@@ -138,14 +138,14 @@ Diqqat qiling: bu yerda rasmdagi `alt=""` bo'sh (dekorativ ikonka, 4-darsda tush
 
 ```mermaid
 flowchart TD
-    A["Need to describe an element?"] --> B{"Has visible text?"}
-    B -->|Yes| C["No aria-label needed"]
-    B -->|No| D{"Is it an image?"}
-    D -->|Yes| E["Use alt attribute"]
-    D -->|No| F["Use aria-label"]
-    G["Need to clarify element role?"] --> H{"Semantic HTML tag exists?"}
-    H -->|Yes| I["Use native tag"]
-    H -->|No| J["Use role attribute"]
+    A["Elementni tasviflash kerakmi?"] --> B{"Ko'rinadigan matn bormi?"}
+    B -->|Ha| C["aria-label kerak emas"]
+    B -->|Yo'q| D{"Bu rasmmi?"}
+    D -->|Ha| E["alt ishlating"]
+    D -->|Yo'q| F["aria-label ishlating"]
+    G["Rolni aniqlash kerakmi?"] --> H{"Semantik HTML teg bormi?"}
+    H -->|Ha| I["Tabiiy tegni ishlating"]
+    H -->|Yo'q| J["role ishlating"]
 ```
 
 ---
@@ -164,7 +164,7 @@ flowchart TD
 
 **Oddiy qilib aytganda:** kontrast — bu matn va uning orasidagi fon orasidagi yorqinlik farqi. Oq fon ustidagi och kulrang matn dizaynerga zamonaviy ko'rinishi mumkin, lekin zaif ko'ruvchi odam uchun deyarli o'qimsiz — hatto oddiy ko'ruvchi odam uchun yorqin quyosh ostida yoki arzon monitor'da.
 
-Haqiqiy rang sozlash CSS ga bog'liq (kelajak durslar mavzusi) bo'lsa ham, hozir printsi pni tushunish muhim, chunki kontent haqidagi qarorlar (masalan, axborotni uzatishda faqat rangga ishonib ishonmaslik) kontent tuzilishida qabul qilinadi.
+Haqiqiy rang sozlash CSS ga bog'liq (kelajak durslar mavzusi) bo'lsa ham, hozir printsipni tushunish muhim, chunki kontent haqidagi qarorlar (masalan, axborotni uzatishda faqat rangga ishonib ishonmaslik) kontent tuzilishida qabul qilinadi.
 
 ### Amaliy qoida: faqat rangga ishonmang
 
@@ -178,7 +178,7 @@ Ko'p uchraydigan xato — muhim axborotni **faqat** rang orqali uzatish, matnli 
 <p style="color: red;"><strong>Xato:</strong> maydon noto'g'ri to'ldirilgan</p>
 ```
 
-CSS ni batafsil bilmasdan ham, printsi pni eslab qolish muhim: **matn mazmuni mustaqil bo'lishi kerak** va barcha rangli bezaklarni olib tashlasangiz ma'noni yo'qotmasligi kerak — chunki foydalanuvchilarning bir qismi uchun (ko'rmaydiganlar, daltonglar, qora-oq ekran foydalanuvchilari) rang umuman mavjud emas.
+CSS ni batafsil bilmasdan ham, printsipni eslab qolish muhim: **matn mazmuni mustaqil bo'lishi kerak** va barcha rangli bezaklarni olib tashlasangiz ma'noni yo'qotmasligi kerak — chunki foydalanuvchilarning bir qismi uchun (ko'rmaydiganlar, daltonglar, qora-oq ekran foydalanuvchilari) rang umuman mavjud emas.
 
 ### Tavsiya etilgan minimal kontrast darajasi
 
@@ -276,7 +276,7 @@ Sahifa to'g'ri qurilgan bo'lsa:
 
 **Agar o'rniga hamma joyda vizual qalin matnli `<p>` bo'lsa** (yoki `h2`→`h4` darajalari o'tkazib yuborilgan) — bu imkoniyat to'liq yo'qoladi: foydalanuvchi tuzilmani tushunish uchun boshidan oxirigacha butun matnni tinglashga majbur bo'ladi.
 
-**Bu butun kursda qo'llagan printsi pning yakuniy umumlashtirishi:** HTML dagi har bir teg mazmunning **haqiqiy ma'nosini** aks ettirishi kerak, "vizual qanday ko'rinishi" kerakligini emas. Shuning uchun biz 1-darsdan beri `<b>`/`<i>` dan voz kechib `<strong>`/`<em>` ishlatamiz, yong'oq `<div>` o'rniga `<nav>`, qalin `<td>` o'rniga `<th>` — barcha bu qarorlar sahifani nafaqat ko'z bilan, balki boshqa istalgan qabul qilish usuli bilan tushunarli qiladi.
+**Bu butun kursda qo'llagan printsipning yakuniy umumlashtirishi:** HTML dagi har bir teg mazmunning **haqiqiy ma'nosini** aks ettirishi kerak, "vizual qanday ko'rinishi" kerakligini emas. Shuning uchun biz 1-darsdan beri `<b>`/`<i>` dan voz kechib `<strong>`/`<em>` ishlatamiz, yong'oq `<div>` o'rniga `<nav>`, qalin `<td>` o'rniga `<th>` — barcha bu qarorlar sahifani nafaqat ko'z bilan, balki boshqa istalgan qabul qilish usuli bilan tushunarli qiladi.
 
 ---
 

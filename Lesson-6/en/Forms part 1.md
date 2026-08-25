@@ -333,7 +333,7 @@ The `required` attribute (written without a value) makes a field mandatory — w
 Today you learned:
 
 - `<form>` with `action` (where to send) and `method` (`get`/`post`, how to send) attributes — a container for all fields.
-- `<label` must be associated with a field via `for`/`id` — this affects both click convenience and screen reader accessibility.
+- `<label>` must be associated with a field via `for`/`id` — this affects both click convenience and screen reader accessibility.
 - Specialized `input` types: `text`, `email` (format validation), `password` (hidden text), `number` (numbers only), `date` (visual calendar).
 - `checkbox` — multiple options can be selected (independent fields), `radio` — only one from a group (unified by the same `name`).
 - `placeholder` — a disappearing hint, not sent with the form; `value` — the actual field content, always sent.

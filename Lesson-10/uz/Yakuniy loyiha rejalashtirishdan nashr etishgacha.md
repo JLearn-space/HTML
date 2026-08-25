@@ -72,12 +72,12 @@ Har bir sahifa uchuni qisqacha, kursdagi qaysi HTML vositalarini ishlatishingizn
 
 ```mermaid
 flowchart TD
-    A["Plan: list pages and elements"] --> B["Build semantic skeleton: header, nav, main, footer"]
-    B --> C["Fill with content: headings, text, images"]
-    C --> D["Add forms with validation"]
-    D --> E["Add accessibility: alt, aria, tabindex"]
-    E --> F["Add meta tags and SEO"]
-    F --> G["Test and publish"]
+    A["Reja: sahifalar va elementlar ro'yxati"] --> B["Semantik skelet: header, nav, main, footer"]
+    B --> C["Kontent bilan to'ldirish: sarlavhalar, matn, rasmlar"]
+    C --> D["Tekshiruv bilan formatlar qo'shish"]
+    D --> E["Mavjudlik qo'shish: alt, aria, tabindex"]
+    E --> F["Meta-teglar va SEO qo'shish"]
+    F --> G["Tekshirish va nashr etish"]
 ```
 
 ---
@@ -303,9 +303,9 @@ _B usuli — terminal orqali Git bilan (agar Git bilan tanish bo'lsangiz):_
 ```bash
 git init
 git add .
-git commit -m "Первая публикация сайта"
+git commit -m "Saytning birinchi nashri"
 git branch -M main
-git remote add origin https://github.com/ваш-username/my-portfolio.git
+git remote add origin https://github.com/your-username/my-portfolio.git
 git push -u origin main
 ```
 
@@ -362,23 +362,23 @@ Tabriklaymiz — siz birinchi `<!DOCTYPE html>` dan to'liq nashr etilgan ko'p sa
 
 ```mermaid
 mindmap
-  root((Course Knowledge))
-    Lesson 1-2
-      HTML document structure
-      Semantic tags
-      Head and body
-    Lesson 3
-      Links and navigation
-    Lesson 4
-      Images and media
-    Lesson 5
-      Tables
-    Lesson 6-7
-      Forms and validation
-    Lesson 8
-      Accessibility a11y
-    Lesson 9
-      Meta tags and SEO
-    Lesson 10
-      Full project cycle
+  root((Kurs bilimi))
+    1-2-darslar
+      HTML hujjat tuzilishi
+      Semantik teglar
+      head va body
+    3-dars
+      Havolalar va navigatsiya
+    4-dars
+      Rasmlar va media
+    5-dars
+      Jadvallar
+    6-7-darslar
+      Formalar va tekshiruv
+    8-dars
+      Mavjudlik a11y
+    9-dars
+      Meta-teglar va SEO
+    10-dars
+      Loyiha to'liq tsikli
 ```
