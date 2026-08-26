@@ -43,7 +43,7 @@ flowchart TD
 
 ## Block 1. `select`, `option`, `optgroup`
 
-**In simple terms:** if the `radio` buttons from the previous lesson work well for 2-4 options, when there are many options (e.g., a list of countries or cities), radio buttons take up too much screen space. For this case, there's the dropdown list — a compact list that only expands on click.
+**In simple terms:** if the `radio` buttons from the previous lesson work well for 2-4 options, when there are many options (e.g., a list of countries or cities), radio buttons take up too much screen space. For this case, there's the dropdown list - a compact list that only expands on click.
 
 ```html
 <label for="city">City:</label>
@@ -57,8 +57,8 @@ flowchart TD
 
 Let's break down the tags:
 
-- **`<select>`** — wrapper for the entire dropdown list, with a required `name` (for sending to the server) and `id` (for connecting to `label`).
-- **`<option>`** — each individual option inside the list. The `value` attribute is what gets sent to the server; the visible text between the tags is what the user sees.
+- **`<select>`** - wrapper for the entire dropdown list, with a required `name` (for sending to the server) and `id` (for connecting to `label`).
+- **`<option>`** - each individual option inside the list. The `value` attribute is what gets sent to the server; the visible text between the tags is what the user sees.
 
 ### Default value via `selected`
 
@@ -70,7 +70,7 @@ Let's break down the tags:
 </select>
 ```
 
-The `selected` attribute (without a value, like `required` from the previous lesson) marks the option that will be shown by default when the page loads — without the user clicking.
+The `selected` attribute (without a value, like `required` from the previous lesson) marks the option that will be shown by default when the page loads - without the user clicking.
 
 ### Multiple selection via `multiple`
 
@@ -83,9 +83,9 @@ The `selected` attribute (without a value, like `required` from the previous les
 </select>
 ```
 
-The `multiple` attribute allows the user to select several options at once (usually by holding Ctrl/Cmd while clicking). This is a rare but useful case — essentially a visual alternative to a group of checkboxes.
+The `multiple` attribute allows the user to select several options at once (usually by holding Ctrl/Cmd while clicking). This is a rare but useful case - essentially a visual alternative to a group of checkboxes.
 
-### `<optgroup>` — grouping options
+### `<optgroup>` - grouping options
 
 When there are very many options, they can be split into labeled groups:
 
@@ -104,9 +104,9 @@ When there are very many options, they can be split into labeled groups:
 </select>
 ```
 
-`<optgroup>` is not a selectable option on its own — it's just a visual heading-separator (bold, not clickable itself) inside the dropdown list. The `label` attribute sets the text of this heading.
+`<optgroup>` is not a selectable option on its own - it's just a visual heading-separator (bold, not clickable itself) inside the dropdown list. The `label` attribute sets the text of this heading.
 
-**Analogy:** `<select>` with multiple `<optgroup>` is like a restaurant menu divided into "Soups", "Hot Dishes", "Desserts" — you can't select the sections themselves, they just help you navigate among a large number of dishes.
+**Analogy:** `<select>` with multiple `<optgroup>` is like a restaurant menu divided into "Soups", "Hot Dishes", "Desserts" - you can't select the sections themselves, they just help you navigate among a large number of dishes.
 
 ---
 
@@ -114,13 +114,13 @@ When there are very many options, they can be split into labeled groups:
 
 | Mistake                                                                                   | How to fix                                                                                                                            |
 | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| Forgetting `value` on `<option>`                                                          | Without `value`, the visible option text gets sent to the server — sometimes inconvenient (e.g., for long text); set `value` intentionally |
+| Forgetting `value` on `<option>`                                                          | Without `value`, the visible option text gets sent to the server - sometimes inconvenient (e.g., for long text); set `value` intentionally |
 | Using multiple `selected` in one `<select>` without `multiple`                           | Without `multiple`, you can only mark `selected` on one `<option>`                                                                     |
 | Confusing `<optgroup>` with a regular `<option>`, trying to make it a clickable option    | `<optgroup>` is only a visual grouping, it cannot be selected on its own                                                               |
 
 ---
 
-## Block 2. `<textarea>` — multi-line text
+## Block 2. `<textarea>` - multi-line text
 
 A regular `<input type="text">` from the previous lesson is a single-line field. When you need to enter long text (a comment, message, review), you use `<textarea>`.
 
@@ -141,10 +141,10 @@ Important difference from `<input>`: **`<textarea>` is a paired tag**, not self-
 <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Tell us a little about yourself..."></textarea>
 ```
 
-- **`rows`** — approximate height of the field in text lines.
-- **`cols`** — approximate width of the field in characters.
+- **`rows`** - approximate height of the field in text lines.
+- **`cols`** - approximate width of the field in characters.
 
-Both attributes set the **initial** size — in many browsers the user can additionally resize `textarea` manually by dragging the corner in the bottom-right of the field.
+Both attributes set the **initial** size - in many browsers the user can additionally resize `textarea` manually by dragging the corner in the bottom-right of the field.
 
 ---
 
@@ -152,13 +152,13 @@ Both attributes set the **initial** size — in many browsers the user can addit
 
 | Mistake                                                                    | How to fix                                                                                                                      |
 | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Trying to set initial text via `value="..."`                               | `<textarea>` has no `value` attribute — text is written between the opening and closing tags                                     |
-| Confusing text content (stays on submit) and `placeholder` (disappears)    | If you need a format hint — use `placeholder`; if you need a real pre-filled value — write it between the tags                   |
+| Trying to set initial text via `value="..."`                               | `<textarea>` has no `value` attribute - text is written between the opening and closing tags                                     |
+| Confusing text content (stays on submit) and `placeholder` (disappears)    | If you need a format hint - use `placeholder`; if you need a real pre-filled value - write it between the tags                   |
 | Forgetting the closing `</textarea>` tag                                   | `textarea` is a paired tag, don't forget the closing tag even if the field is initially empty                                     |
 
 ---
 
-## Block 3. `<fieldset>` and `<legend>` — grouping form fields
+## Block 3. `<fieldset>` and `<legend>` - grouping form fields
 
 When a form becomes large (e.g., a registration with several logical sections: "Personal Data", "Contacts", "Password"), it's useful to visually and semantically group related fields.
 
@@ -184,8 +184,8 @@ When a form becomes large (e.g., a registration with several logical sections: "
 </fieldset>
 ```
 
-- **`<fieldset>`** — wrapper for a group of related fields; the browser displays it with a border around the group by default.
-- **`<legend>`** — label/heading for this group, displayed right "on the border" of the `fieldset` (visually cuts into the top edge of the border).
+- **`<fieldset>`** - wrapper for a group of related fields; the browser displays it with a border around the group by default.
+- **`<legend>`** - label/heading for this group, displayed right "on the border" of the `fieldset` (visually cuts into the top edge of the border).
 
 **Especially useful for radio groups:** since several radio buttons are semantically one "question", it makes sense to wrap them in a `fieldset` with a `legend` that states the question itself:
 
@@ -204,7 +204,7 @@ When a form becomes large (e.g., a registration with several logical sections: "
 </fieldset>
 ```
 
-**Why this matters more than just a visual border:** a screen reader reading a radio button inside a `fieldset` with `legend` reads both the `legend` text and the specific option label — for example, "Your skill level, Beginner" — this gives the user full context, not an isolated word "Beginner" without understanding which question it answers.
+**Why this matters more than just a visual border:** a screen reader reading a radio button inside a `fieldset` with `legend` reads both the `legend` text and the specific option label - for example, "Your skill level, Beginner" - this gives the user full context, not an isolated word "Beginner" without understanding which question it answers.
 
 ---
 
@@ -245,7 +245,7 @@ Both elements can submit a form, but there are important differences between the
 <input type="submit" value="Submit form">
 ```
 
-The button text is set via the `value` attribute (as we've seen with regular fields). It's a self-closing tag — you can't place an icon or other HTML markup inside, only plain text via `value`.
+The button text is set via the `value` attribute (as we've seen with regular fields). It's a self-closing tag - you can't place an icon or other HTML markup inside, only plain text via `value`.
 
 ### `<button>`
 
@@ -253,7 +253,7 @@ The button text is set via the `value` attribute (as we've seen with regular fie
 <button type="submit">Submit form</button>
 ```
 
-`<button>` is a **paired** tag; text (or even more complex content — icons, nested tags) goes between the opening and closing tags:
+`<button>` is a **paired** tag; text (or even more complex content - icons, nested tags) goes between the opening and closing tags:
 
 ```html
 <button type="submit">
@@ -261,7 +261,7 @@ The button text is set via the `value` attribute (as we've seen with regular fie
 </button>
 ```
 
-### The `type` attribute on `<button>` — an important detail
+### The `type` attribute on `<button>` - an important detail
 
 `<button>` has three possible `type` values, and this is a common source of errors:
 
@@ -271,9 +271,9 @@ The button text is set via the `value` attribute (as we've seen with regular fie
 <button type="button">Regular button (does nothing on its own)</button>
 ```
 
-- **`type="submit"`** — submits the form (the default value if `type` is not specified explicitly).
-- **`type="reset"`** — resets all form fields back to their initial values.
-- **`type="button"`** — a regular button with no built-in behavior; used when button behavior will be added later via JavaScript (in this course we won't actively use these buttons since JavaScript isn't part of the curriculum, but it's important to know this value exists).
+- **`type="submit"`** - submits the form (the default value if `type` is not specified explicitly).
+- **`type="reset"`** - resets all form fields back to their initial values.
+- **`type="button"`** - a regular button with no built-in behavior; used when button behavior will be added later via JavaScript (in this course we won't actively use these buttons since JavaScript isn't part of the curriculum, but it's important to know this value exists).
 
 **Important warning:** if `<button>` is inside `<form>` and you **didn't specify** `type` explicitly, the browser treats it as `type="submit"` by default. This can lead to unexpected form submission when you just wanted "a button for something else." **Rule: always specify `type` on `<button>` explicitly.**
 
@@ -282,7 +282,7 @@ flowchart LR
     A["<button>"] --> B{"type attribute?"}
     B -->|"type=submit"| C["Sends form data"]
     B -->|"type=reset"| D["Clears all fields"]
-    B -->|"type=button"| E["No default behavior — JS only"]
+    B -->|"type=button"| E["No default behavior - JS only"]
     F["<input>"] --> G{"type attribute?"}
     G -->|"type=submit"| H["Sends form data"]
     G -->|"type=reset"| I["Clears all fields"]
@@ -295,8 +295,8 @@ flowchart LR
 | Mistake                                                                                                                     | How to fix                                                                |
 | --------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
 | Not specifying `type` on `<button>`, expecting it to be "just a button"                                                     | Always explicitly set `type="submit"`, `type="reset"`, or `type="button"`  |
-| Trying to nest HTML inside `input type="submit"`                                                                            | If you need a button with complex content — use `<button>`                 |
-| Using `type="reset"` without clear necessity — users often accidentally click it and lose all entered text                   | Use `reset` carefully, only when truly needed in your form                  |
+| Trying to nest HTML inside `input type="submit"`                                                                            | If you need a button with complex content - use `<button>`                 |
+| Using `type="reset"` without clear necessity - users often accidentally click it and lose all entered text                   | Use `reset` carefully, only when truly needed in your form                  |
 
 ---
 
@@ -304,7 +304,7 @@ flowchart LR
 
 We partially covered validation in the previous lesson (`required`, `min`/`max` for `type="number"`). Today we expand the toolkit.
 
-### `min` and `max` — for numbers and dates
+### `min` and `max` - for numbers and dates
 
 ```html
 <label for="age">Age:</label>
@@ -316,7 +316,7 @@ We partially covered validation in the previous lesson (`required`, `min`/`max` 
 
 The browser won't allow submitting the form if the value falls outside the specified bounds, and will show the user a popup warning.
 
-### `maxlength` — text length limit
+### `maxlength` - text length limit
 
 ```html
 <label for="username">Username (max 20 characters):</label>
@@ -326,11 +326,11 @@ The browser won't allow submitting the form if the value falls outside the speci
 <textarea id="comment" name="comment" maxlength="500"></textarea>
 ```
 
-`maxlength` physically prevents entering more than the specified number of characters — unlike `min`/`max`, here exceeding the limit is simply impossible to type, not "rejected on submit."
+`maxlength` physically prevents entering more than the specified number of characters - unlike `min`/`max`, here exceeding the limit is simply impossible to type, not "rejected on submit."
 
-### `pattern` — template validation (regular expression)
+### `pattern` - template validation (regular expression)
 
-`pattern` is the most powerful but also the most complex validation tool. It uses **regular expressions** — a special language for describing text templates. We won't dive deep into regular expression syntax in this course (that's a separate big topic), but we'll go through several practical examples.
+`pattern` is the most powerful but also the most complex validation tool. It uses **regular expressions** - a special language for describing text templates. We won't dive deep into regular expression syntax in this course (that's a separate big topic), but we'll go through several practical examples.
 
 **Example: only digits, exactly 7 characters (a sample student ID format):**
 
@@ -348,7 +348,7 @@ Breaking down the `[0-9]{7}` pattern: `[0-9]` means "any digit from 0 to 9", `{7
 <input type="text" id="name" name="name" pattern="[А-Яа-яЁё\s]+" title="Enter name using Cyrillic only">
 ```
 
-**Important note about the `title` attribute next to `pattern`:** it's not technically required, but strongly recommended — the browser will show the `title` text in a popup hint when a validation error occurs, explaining what exactly needs to be entered. Without `title`, the user will only see a generic "Pattern not matched," which is of little help.
+**Important note about the `title` attribute next to `pattern`:** it's not technically required, but strongly recommended - the browser will show the `title` text in a popup hint when a validation error occurs, explaining what exactly needs to be entered. Without `title`, the user will only see a generic "Pattern not matched," which is of little help.
 
 **Important caveat for beginners:** writing advanced regular expressions is an advanced skill that in practice often requires separate study or finding ready-made templates (e.g., for validating a phone number for a specific country). In this lesson, it's important to understand the **principle** of how `pattern` works, not to memorize all possible patterns by heart.
 
@@ -370,8 +370,8 @@ Today you learned:
 
 - `<select>`/`<option>` create a dropdown list, `<optgroup>` groups options, `selected` sets the default value, `multiple` allows selecting several options.
 - `<textarea>` is a paired tag for multi-line text; initial text goes between tags, not via `value`.
-- `<fieldset>`/`<legend>` semantically group related form fields — especially useful for radio button groups.
-- `<button>` is more flexible than `<input type="submit">` — supports nested content, but requires explicit `type` specification.
+- `<fieldset>`/`<legend>` semantically group related form fields - especially useful for radio button groups.
+- `<button>` is more flexible than `<input type="submit">` - supports nested content, but requires explicit `type` specification.
 - `min`/`max` limit number and date ranges, `maxlength` limits text length, `pattern` validates input against a template (with required `title` for a clear hint).
 
 ➡ **Next lesson:** [Accessibility (a11y)](../../Lesson-8/en/Accessibility%20(a11y).md)

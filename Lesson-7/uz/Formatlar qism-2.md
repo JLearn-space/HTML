@@ -282,7 +282,7 @@ flowchart LR
     A["<button>"] --> B{"type atributi?"}
     B -->|"type=submit"| C["Forma ma'lumotlarini yuboradi"]
     B -->|"type=reset"| D["Barcha maydonlarni tozalaydi"]
-    B -->|"type=button"| E["Standart xulq yo'q — faqat JS"]
+    B -->|"type=button"| E["Standart xulq yo'q - faqat JS"]
     F["<input>"] --> G{"type atributi?"}
     G -->|"type=submit"| H["Forma ma'lumotlarini yuboradi"]
     G -->|"type=reset"| I["Barcha maydonlarni tozalaydi"]
@@ -295,8 +295,8 @@ flowchart LR
 | Xato                                                                                                                    | Tuzatish                                                              |
 | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
 | `<button>` da `type` ko'rsatmaslik, "oddiy tugma" deb kutish                                                         | Doimo `type="submit"`, `type="reset"` yoki `type="button"` ni aniq ko'rsating |
-| `input type="submit"` ichiga HTML qo'yishga harakat qilish                                                                        | Murakkab mazmunli tugma kerak bo'lsa — `<button>` ishlating           |
-| Aniq kerak bo'lmasdan `type="reset"` ishlatish — foydalanuvchilar ko'p tasodifan bosib, kiritilgan butun matnni yo'qotadi | `reset` ni ehtiyotkorlik bilan ishlating, faqat haqiqatdan kerak bo'lsa |
+| `input type="submit"` ichiga HTML qo'yishga harakat qilish                                                                        | Murakkab mazmunli tugma kerak bo'lsa - `<button>` ishlating           |
+| Aniq kerak bo'lmasdan `type="reset"` ishlatish - foydalanuvchilar ko'p tasodifan bosib, kiritilgan butun matnni yo'qotadi | `reset` ni ehtiyotkorlik bilan ishlating, faqat haqiqatdan kerak bo'lsa |
 
 ---
 

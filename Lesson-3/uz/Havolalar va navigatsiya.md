@@ -1,6 +1,6 @@
 ## Havolalar va navigatsiya
 
-> **Oldingi dars bilan bog'lanish:** o'tgan darsda biz matnni tizimlashtirishni o'rgandik va `<nav>` tegini "qaltis" havolalar `href="#"` bilan ishlatdik. Bugun havolalar qanday haqiqatan ishlashini tushunamiz — va bir nechta HTML-sahifalarni bitta saytga bog'laymiz.
+> **Oldingi dars bilan bog'lanish:** o'tgan darsda biz matnni tizimlashtirishni o'rgandik va `<nav>` tegini "qaltis" havolalar `href="#"` bilan ishlatdik. Bugun havolalar qanday haqiqatan ishlashini tushunamiz - va bir nechta HTML-sahifalarni bitta saytga bog'laymiz.
 
 ---
 
@@ -9,7 +9,7 @@
 - `<a>` tegi va `href` atributi bilan havolalar yaratish.
 - Absolyut va nisbiy yo'llarni farqlash va qaysi holatda qaysini ishlatishni bilish.
 - `target="_blank"` orqali havolalarni yangi yorliqda ochish.
-- Ankor havolalarni yaratish — sahifaning ma'lum joyiga o'tish.
+- Ankor havolalarni yaratish - sahifaning ma'lum joyiga o'tish.
 - Email va telefon uchun havolalar yaratish (`mailto:`, `tel:`).
 - Bir nechta HTML-sahifalardan uzluksiz navigatsiyali sayt yig'ish.
 
@@ -32,9 +32,9 @@
 
 ## 1-blok. `<a>` tegi va `href` atributi
 
-**Oddiy qilib aytganda:** tasavvur qiling, kitobda "batafsil bu haqida 42-sahifada o'qing" deb yozilgan. HTML'dagi havola — bu xuddi shu narsa, faqat "42-sahifa" o'rniga boshqa veb-sahifaning manzilini (yoki shu sahifaning boshqa joyini) ko'rsatasiz va o'tish bitta bosish bilan amalga oshadi.
+**Oddiy qilib aytganda:** tasavvur qiling, kitobda "batafsil bu haqida 42-sahifada o'qing" deb yozilgan. HTML'dagi havola - bu xuddi shu narsa, faqat "42-sahifa" o'rniga boshqa veb-sahifaning manzilini (yoki shu sahifaning boshqa joyini) ko'rsatasiz va o'tish bitta bosish bilan amalga oshadi.
 
-`<a>` tegi (anchor — "yakor") — juft teg bo'lib, matnni (yoki rasmini — bu 4-darsda) o'rab, uni bosiladigan havolaga aylantiradi.
+`<a>` tegi (anchor - "yakor") - juft teg bo'lib, matnni (yoki rasmini - bu 4-darsda) o'rab, uni bosiladigan havolaga aylantiradi.
 
 ```html
 <a href="https://www.google.com">Google ga o'tish</a>
@@ -42,34 +42,34 @@
 
 Bu yerda:
 
-- `<a>` — havola tegi
-- `href` (hypertext reference) — havola qayerga borishini ko'rsatadigan atribut — **majburiy** atribut, usiz `<a>` havola sifatida ishlamaydi
-- `Google ga o'tish` — foydalanuvchi bosadigan ko'rinadigan havola matni
+- `<a>` - havola tegi
+- `href` (hypertext reference) - havola qayerga borishini ko'rsatadigan atribut - **majburiy** atribut, usiz `<a>` havola sifatida ishlamaydi
+- `Google ga o'tish` - foydalanuvchi bosadigan ko'rinadigan havola matni
 
-**Taqqoslash:** `<a>` — bu eshik, `href` esa manzil, bu eshik qayerga borishini ko'rsatadi. Manzilsiz eshik shunchaki devorga chizilgan va hech qayerga ochilmaydi.
+**Taqqoslash:** `<a>` - bu eshik, `href` esa manzil, bu eshik qayerga borishini ko'rsatadi. Manzilsiz eshik shunchaki devorga chizilgan va hech qayerga ochilmaydi.
 
 ---
 
 ## 2-blok. Absolyut va nisbiy yo'llar
 
-Bu darsning asosiy mavzusi — ko'pchilik yangi boshlovchilar aynan shu yerda adashadi.
+Bu darsning asosiy mavzusi - ko'pchilik yangi boshlovchilar aynan shu yerda adashadi.
 
 ### Absolyut yo'l
 
-**Absolyut yo'l** — bu to'liq manzil, protokol (`https://`) va domen bilan birga. **Tashqi** saytlarga havolalar uchun ishlatiladi — ya'ni shaxsiy loyihangizning sahifalariga emas.
+**Absolyut yo'l** - bu to'liq manzil, protokol (`https://`) va domen bilan birga. **Tashqi** saytlarga havolalar uchun ishlatiladi - ya'ni shaxsiy loyihangizning sahifalariga emas.
 
 ```html
 <a href="https://www.wikipedia.org">Vikipediya</a>
 <a href="https://github.com/Saydullayev017">Mening GitHub</a>
 ```
 
-**Taqqoslash:** absolyut yo'l — bu shahar va mamlakat bilan to'liq pochta manzili: "O'zbekiston, Toshkent shahri, Amir Temur ko'chasi, 10-uy". U dunyoning istalgan nuqtasidan aniq tushunarli.
+**Taqqoslash:** absolyut yo'l - bu shahar va mamlakat bilan to'liq pochta manzili: "O'zbekiston, Toshkent shahri, Amir Temur ko'chasi, 10-uy". U dunyoning istalgan nuqtasidan aniq tushunarli.
 
 ### Nisbiy yo'l
 
-**Nisbiy yo'l** — bu **joriy faylga nisbatan** ko'rsatilgan manzil. Bitta loyiha ichidagi **o'z** sahifalaringizga havolalar uchun ishlatiladi.
+**Nisbiy yo'l** - bu **joriy faylga nisbatan** ko'rsatilgan manzil. Bitta loyiha ichidagi **o'z** sahifalaringizga havolalar uchun ishlatiladi.
 
-**Taqqoslash:** nisbiy yo'l — bu qo'shniga "ikkita uy nariga boring" deb aytishga o'xshaydi — bu faqat boshlang'ich nuqtada turgan bo'lsangiz tushunarli. Agar boshqa shaharda bo'lsangiz, bu ko'rsatma ma'nosini yo'qotadi — lekin to'liq manzil istalgan joydan ishlaydi.
+**Taqqoslash:** nisbiy yo'l - bu qo'shniga "ikkita uy nariga boring" deb aytishga o'xshaydi - bu faqat boshlang'ich nuqtada turgan bo'lsangiz tushunarli. Agar boshqa shaharda bo'lsangiz, bu ko'rsatma ma'nosini yo'qotadi - lekin to'liq manzil istalgan joydan ishlaydi.
 
 Loyiha tuzilishi misolida tushunamiz:
 
@@ -88,7 +88,7 @@ html-course/
 <a href="about.html">Sayt haqida</a>
 ```
 
-Faylning oddiy nomi — brauzer uni joriy fayl yonida qidiradi.
+Faylning oddiy nomi - brauzer uni joriy fayl yonida qidiradi.
 
 **Ichki papkadagi faylga havola:**
 
@@ -102,7 +102,7 @@ Faylning oddiy nomi — brauzer uni joriy fayl yonida qidiradi.
 <a href="../index.html">Bosh sahifaga</a>
 ```
 
-`../` "bir daraja yuqoriga ko'tarilish" degan ma'noni anglatadi — xonadan koridorga chiqishdek.
+`../` "bir daraja yuqoriga ko'tarilish" degan ma'noni anglatadi - xonadan koridorga chiqishdek.
 
 **Saytning o'z papkasiga/bosh sahifasiga havola:**
 
@@ -110,7 +110,7 @@ Faylning oddiy nomi — brauzer uni joriy fayl yonida qidiradi.
 <a href="/">Bosh sahifaga</a>
 ```
 
-Boshidagi slesh "sayt ildizi" degan ma'noni anglatadi — agar sizda masalan `mysite.uz` sayti bo'lsa, `/` havolasi `mysite.uz` ga olib boradi, yonidagi faylga emas.
+Boshidagi slesh "sayt ildizi" degan ma'noni anglatadi - agar sizda masalan `mysite.uz` sayti bo'lsa, `/` havolasi `mysite.uz` ga olib boradi, yonidagi faylga emas.
 
 ```mermaid
 flowchart LR
@@ -128,7 +128,7 @@ flowchart LR
 |Tashqi saytga havola (ijtimoiy tarmoq, Vikipediya, boshqa sayt)|Absolyut|
 |Loyihangizdagi rasmga havola|Nisbiy|
 
-**Nima uchun bu muhim:** agar o'z sahifalaringiz uchun absolyut yo'ldan foydalansangiz (masalan, `href="https://mysite.ru/about.html"` o'rniga `href="about.html"`) — sayt lokal ravishda ishlab chiqish paytida to'g'ri ishlashni to'xtatadi (u hali internetda shu domen ostida nashr etilmagan) va loyihani boshqa domen yoki hostingga ko'chirishni qiyinlashtiradi.
+**Nima uchun bu muhim:** agar o'z sahifalaringiz uchun absolyut yo'ldan foydalansangiz (masalan, `href="https://mysite.ru/about.html"` o'rniga `href="about.html"`) - sayt lokal ravishda ishlab chiqish paytida to'g'ri ishlashni to'xtatadi (u hali internetda shu domen ostida nashr etilmagan) va loyihani boshqa domen yoki hostingga ko'chirishni qiyinlashtiradi.
 
 ```mermaid
 flowchart TD
@@ -151,33 +151,33 @@ flowchart TD
 | Xato                                                                                  | Qanday tuzatish                                                                                                            |
 | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | O'z sahifalari uchun absolyut yo'ldan foydalanish: `href="https://mysite.ru/about.html"` | Loyiha ichidagi sahifalar uchun nisbiy yo'ldan foydalaning: `href="about.html"`                                              |
-| `/about.html` (sayt ildizidan) va `about.html` (joriy papkadani) ni aralashtirish       | Eslab qoling: boshidagi slesh "sayt ildizidan" degan ma'noni anglatadi, sleshsiz — "joriy fayldan"                           |
+| `/about.html` (sayt ildizidan) va `about.html` (joriy papkadani) ni aralashtirish       | Eslab qoling: boshidagi slesh "sayt ildizidan" degan ma'noni anglatadi, sleshsiz - "joriy fayldan"                           |
 | Havolada `.html` kengaytmasini unutish: `href="about"`                                | To'liq fayl nomini kengaytma bilan ko'rsating: `href="about.html"`                                                         |
-| Fayl nomidagi registrni noto'g'ri yozish: `href="About.html"` o'rniga `about.html`     | Ko'pchilik serverlarda (ayniqsa Linux/GitHub Pages) registr muhim — havola nomi fayl nomi bilan aniq mos kelishi kerak       |
+| Fayl nomidagi registrni noto'g'ri yozish: `href="About.html"` o'rniga `about.html`     | Ko'pchilik serverlarda (ayniqsa Linux/GitHub Pages) registr muhim - havola nomi fayl nomi bilan aniq mos kelishi kerak       |
 
 ---
 
-## 3-blok. `target="_blank"` — yangi yorliqda ochish
+## 3-blok. `target="_blank"` - yangi yorliqda ochish
 
-Standart ravishda havola bir xil oynada/yorliqda ochiladi, joriy sahifani almashtiradi. Agar sahifa **yangi** yorliqda ochilishini xohlasangiz (masalan, tashqi saytga o'tishda, foydalanuvchi sizning saytingizni yo'qotmasligi uchun) — `target="_blank"` atributini ishlating.
+Standart ravishda havola bir xil oynada/yorliqda ochiladi, joriy sahifani almashtiradi. Agar sahifa **yangi** yorliqda ochilishini xohlasangiz (masalan, tashqi saytga o'tishda, foydalanuvchi sizning saytingizni yo'qotmasligi uchun) - `target="_blank"` atributini ishlating.
 
 ```html
 <a href="https://github.com/Saydullayev017" target="_blank">Mening GitHub</a>
 ```
 
-**Xavfsizlik haqida muhim:** `target="_blank"` ishlatganingizda, qo'shimcha ravishda `rel="noopener noreferrer"` atributini qo'shish tavsiya etiladi. Usiz yangi ochilgan yorliq texnik jihatdan sizning asosiy sahifangizning `window` ob'ektiga kirish huquqiga ega bo'ladi — bu kamdan-kam, lekin ma'lum zaiflik.
+**Xavfsizlik haqida muhim:** `target="_blank"` ishlatganingizda, qo'shimcha ravishda `rel="noopener noreferrer"` atributini qo'shish tavsiya etiladi. Usiz yangi ochilgan yorliq texnik jihatdan sizning asosiy sahifangizning `window` ob'ektiga kirish huquqiga ega bo'ladi - bu kamdan-kam, lekin ma'lum zaiflik.
 
 ```html
 <a href="https://github.com/Saydullayev017" target="_blank" rel="noopener noreferrer">Mening GitHub</a>
 ```
 
-**Qo'llanish qoidasi:** `target="_blank"` ni **faqat tashqi saytlar uchun** ishlating. O'z saytingizdagi havolalar uchun yangi yorliq ochmang — bu foydalanuvchi uchun kutilmagan va uning brauzerini ortiqcha yorliqlar bilan to'ldiradi.
+**Qo'llanish qoidasi:** `target="_blank"` ni **faqat tashqi saytlar uchun** ishlating. O'z saytingizdagi havolalar uchun yangi yorliq ochmang - bu foydalanuvchi uchun kutilmagan va uning brauzerini ortiqcha yorliqlar bilan to'ldiradi.
 
 ---
 
-## 4-blok. Ankor havolalar — sahifaning bir qismiga o'tish
+## 4-blok. Ankor havolalar - sahifaning bir qismiga o'tish
 
-Ba'zan boshqa sahifaga emas, balki shu (yoki boshqa) sahifaning ma'lum **joyiga** o'tish kerak — masalan, uzun maqolaning aniq bo'limiga.
+Ba'zan boshqa sahifaga emas, balki shu (yoki boshqa) sahifaning ma'lum **joyiga** o'tish kerak - masalan, uzun maqolaning aniq bo'limiga.
 
 Bu ikki qadamda amalga oshiriladi.
 
@@ -231,7 +231,7 @@ Bu `about.html` faylini ochadi va darhol `id="history"` ga ega elementga buradi.
 
 ### Sahifaning yuqorisiga qaytish
 
-Ko'p ishlatiladigan usul — uzun sahifaning oxiridagi "yuqoriga" havola:
+Ko'p ishlatiladigan usul - uzun sahifaning oxiridagi "yuqoriga" havola:
 
 ```html
 <a href="#top">Yuqoriga ↑</a>
@@ -239,7 +239,7 @@ Ko'p ishlatiladigan usul — uzun sahifaning oxiridagi "yuqoriga" havola:
 
 (Sahifaning boshida biror joyda `id="top"` ga ega element bor shartida, masalan `<body id="top">` yoki birinchi sarlavha.)
 
-**`id` haqida muhim qoida:** `id` qiymati butun sahifada **noyob** bo'lishi kerak — bir xil `id` ga ega ikki element bo'lishi mumkin emas. Bu `id` ni `class` dan ajratadi (`class` haqida CSS darsidan batafsil gaplashamiz).
+**`id` haqida muhim qoida:** `id` qiymati butun sahifada **noyob** bo'lishi kerak - bir xil `id` ga ega ikki element bo'lishi mumkin emas. Bu `id` ni `class` dan ajratadi (`class` haqida CSS darsidan batafsil gaplashamiz).
 
 ---
 
@@ -256,7 +256,7 @@ Ko'p ishlatiladigan usul — uzun sahifaning oxiridagi "yuqoriga" havola:
 
 ## 5-blok. Email va telefon uchun havolalar
 
-### `mailto:` — pochta dasturini to'ldirilgan manzil bilan ochish
+### `mailto:` - pochta dasturini to'ldirilgan manzil bilan ochish
 
 ```html
 <a href="mailto:info@saydullayev.fun">Bizga xat yozish</a>
@@ -270,13 +270,13 @@ Xat mavzusini darhol belgilash mumkin:
 <a href="mailto:info@saydullayev.fun?subject=Kurs haqida savol">Bizga xat yozish</a>
 ```
 
-### `tel:` — qo'ng'iroq ilovasini ochish
+### `tel:` - qo'ng'iroq ilovasini ochish
 
 ```html
 <a href="tel:+998901234567">+998 90 123-45-67</a>
 ```
 
-Ayniqsa mobil qurilmalarda foydali — bosganingizda telefon darhol shu raqamga qo'ng'iroq qilishni taklif qiladi. Raqamni xalqaro formatda (va `+` va mamlakat kodi bilan) ko'rsatish tavsiya etiladi, `href` atributi ichida bo'sh joy va qavslarsiz — ko'rinadigan matnda esa istalgandek formatlash mumkin.
+Ayniqsa mobil qurilmalarda foydali - bosganingizda telefon darhol shu raqamga qo'ng'iroq qilishni taklif qiladi. Raqamni xalqaro formatda (va `+` va mamlakat kodi bilan) ko'rsatish tavsiya etiladi, `href` atributi ichida bo'sh joy va qavslarsiz - ko'rinadigan matnda esa istalgandek formatlash mumkin.
 
 ---
 
@@ -285,7 +285,7 @@ Ayniqsa mobil qurilmalarda foydali — bosganingizda telefon darhol shu raqamga 
 | Xato                                                                              | Qanday tuzatish                                                                                                    |
 | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | Manzildan oldin `mailto:` va `tel:` ni unutish: `href="info@site.uz"`             | Har doim protokolni ko'rsating: `href="mailto:info@site.uz"`                                                      |
-| `href` ichida bo'sh joy bilan telefon raqamini ko'rsatish: `href="tel:+998 90 123 45 67"` | Atribut ichida raqamni yig'ish shaklida yozing: `href="tel:+998901234567"` — formatlashni faqat ko'rinadigan matnda bajaring |
+| `href` ichida bo'sh joy bilan telefon raqamini ko'rsatish: `href="tel:+998 90 123 45 67"` | Atribut ichida raqamni yig'ish shaklida yozing: `href="tel:+998901234567"` - formatlashni faqat ko'rinadigan matnda bajaring |
 
 ---
 
@@ -311,7 +311,7 @@ Mustaqil ravishda, misollarga qaramasdan yarating:
 
 ## 7-blok. Uzluksiz navigatsiyali ko'p sahifali saytni yig'amiz
 
-Endi barcha havola teglarini ular mavjud bo'lgan narsa uchun qo'llaymiz — bir nechta sahifani bitta saytga bog'laymiz. Uchta sahifa yaratamiz: `index.html`, `about.html`, `contact.html` — har birida bir xil navigatsiya menyusi.
+Endi barcha havola teglarini ular mavjud bo'lgan narsa uchun qo'llaymiz - bir nechta sahifani bitta saytga bog'laymiz. Uchta sahifa yaratamiz: `index.html`, `about.html`, `contact.html` - har birida bir xil navigatsiya menyusi.
 
 Papka tuzilishi:
 
@@ -329,7 +329,7 @@ html-course/
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Bosh sahifa — Mening saytim</title>
+    <title>Bosh sahifa - Mening saytim</title>
 </head>
 <body>
     <header>
@@ -363,7 +363,7 @@ html-course/
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Sayt haqida — Mening saytim</title>
+    <title>Sayt haqida - Mening saytim</title>
 </head>
 <body>
     <header>
@@ -397,7 +397,7 @@ html-course/
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Aloqa — Mening saytim</title>
+    <title>Aloqa - Mening saytim</title>
 </head>
 <body>
     <header>
@@ -427,9 +427,9 @@ html-course/
 </html>
 ```
 
-**O'zingiz sinab ko'ring:** uchta faylni yarating, `index.html` ni Live Server orqali oching va menyudagi barcha havolalarni bosing — o'tishlar uchta sahifa orasida ikki tomonlama ishlashiga ishonch hosil qiling.
+**O'zingiz sinab ko'ring:** uchta faylni yarating, `index.html` ni Live Server orqali oching va menyudagi barcha havolalarni bosing - o'tishlar uchta sahifa orasida ikki tomonlama ishlashiga ishonch hosil qiling.
 
-E'tibor bering: `<nav>` menyusi uchta sahifada **so'zma-so'z bir xil** — bu standart amaliyot (kelajakda ilg'or texnologiyalarni o'rganganingizda, takrorlanadigan bloklarni bitta faylga chiqarish mumkin bo'ladi, lekin toza HTML darajasida hozircha shu blokni har sahifaga nusxalaymiz).
+E'tibor bering: `<nav>` menyusi uchta sahifada **so'zma-so'z bir xil** - bu standart amaliyot (kelajakda ilg'or texnologiyalarni o'rganganingizda, takrorlanadigan bloklarni bitta faylga chiqarish mumkin bo'ladi, lekin toza HTML darajasida hozircha shu blokni har sahifaga nusxalaymiz).
 
 ---
 
@@ -438,8 +438,8 @@ E'tibor bering: `<nav>` menyusi uchta sahifada **so'zma-so'z bir xil** — bu st
 Bugun siz quyidagilarni o'rgandingiz:
 
 - `<a>` tegi majburiy `href` atributi bilan havolani yaratadi.
-- Absolyut yo'l (`https://` bilan) — tashqi saytlar uchun, nisbiy yo'l — loyiha ichidagi sahifalar uchun.
-- `target="_blank"` (`rel="noopener noreferrer"` bilan) havolani yangi yorliqda ochadi — faqat tashqi havolalar uchun ishlatiladi.
+- Absolyut yo'l (`https://` bilan) - tashqi saytlar uchun, nisbiy yo'l - loyiha ichidagi sahifalar uchun.
+- `target="_blank"` (`rel="noopener noreferrer"` bilan) havolani yangi yorliqda ochadi - faqat tashqi havolalar uchun ishlatiladi.
 - Ankor havolalar (`href="#id"`) maqsad elementining `id`si orqali sahifaning ma'lum joyiga o'tkazadi.
 - `mailto:` va `tel:` tez xat yuborish yoki qo'ng'iroq qilish uchun havolalar yaratadi.
 - Siz birinchi navigatsiya menyusiga ega ko'p sahifali saytingizni yig'diz.

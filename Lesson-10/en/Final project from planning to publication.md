@@ -33,7 +33,7 @@
 
 ## Block 1. Planning before writing code
 
-**In simple terms:** before building a house, an architect draws a plan on paper — how many rooms, what goes where, how to move between them. It's the same with websites: if you sit down to write code without a plan, you'll very likely end up constantly redoing everything on the fly.
+**In simple terms:** before building a house, an architect draws a plan on paper - how many rooms, what goes where, how to move between them. It's the same with websites: if you sit down to write code without a plan, you'll very likely end up constantly redoing everything on the fly.
 
 ### Step 1. Choose your project topic
 
@@ -43,7 +43,7 @@ The final project is a simple multi-page portfolio website. Examples of good top
 - A small local business website (cafe, tutoring, workshop).
 - A course or hobby club showcase website.
 
-**Important:** choose a topic you actually have something to say about — it'll be much easier to fill the pages with meaningful content, not just "filler" text.
+**Important:** choose a topic you actually have something to say about - it'll be much easier to fill the pages with meaningful content, not just "filler" text.
 
 ### Step 2. Define the page structure (sitemap)
 
@@ -64,11 +64,11 @@ For each page, briefly list which HTML tools from the course you'll be using. Fo
 
 - `<header>` with a persistent `<nav>` menu
 - `<main>` with a heading `<h1>Contacts</h1>`
-- `<table>` with `scope` — contact methods and working hours
-- `<form>` with `fieldset`/`legend` — contact form
+- `<table>` with `scope` - contact methods and working hours
+- `<form>` with `fieldset`/`legend` - contact form
 - `<footer>` with social media links using `aria-label`
 
-**This planning is not a formality.** This is usually where you notice inconsistencies — for example, that your home page has no link to a page you just created. It's much easier to fix this on paper than after you've already written code for four pages.
+**This planning is not a formality.** This is usually where you notice inconsistencies - for example, that your home page has no link to a page you just created. It's much easier to fix this on paper than after you've already written code for four pages.
 
 ```mermaid
 flowchart TD
@@ -84,7 +84,7 @@ flowchart TD
 
 ## Block 2. Step-by-step build: semantics (the skeleton of every page)
 
-We start building with the semantic skeleton — what we covered in lesson 2. This is done **before** filling in real content — structure first, then content goes inside it.
+We start building with the semantic skeleton - what we covered in lesson 2. This is done **before** filling in real content - structure first, then content goes inside it.
 
 ```html
 <!DOCTYPE html>
@@ -111,13 +111,13 @@ We start building with the semantic skeleton — what we covered in lesson 2. Th
 </html>
 ```
 
-**Do this the same way for every page in your project** — a single skeleton with the same `<header>`/`<nav>`/`<footer>` on all pages, with only the `<main>` content differing — exactly as we built a multi-page site in lesson 3.
+**Do this the same way for every page in your project** - a single skeleton with the same `<header>`/`<nav>`/`<footer>` on all pages, with only the `<main>` content differing - exactly as we built a multi-page site in lesson 3.
 
 ---
 
 ## Block 3. Step-by-step build: content (text, headings, lists)
 
-Now we fill `<main>` with real text, using proper heading hierarchy (lesson 2) — a single `<h1>` per page, with no skipped levels.
+Now we fill `<main>` with real text, using proper heading hierarchy (lesson 2) - a single `<h1>` per page, with no skipped levels.
 
 **Example for `about.html`:**
 
@@ -125,11 +125,11 @@ Now we fill `<main>` with real text, using proper heading hierarchy (lesson 2) �
 <main>
     <h1>About Me</h1>
 
-    <p>My name is Aziz and I've been <strong>passionate about web development</strong> for over a year now. I started with HTML — and now I'm taking this course to organize my knowledge.</p>
+    <p>My name is Aziz and I've been <strong>passionate about web development</strong> for over a year now. I started with HTML - and now I'm taking this course to organize my knowledge.</p>
 
     <h2>My Skills</h2>
     <ul>
-        <li>HTML5 — semantic markup</li>
+        <li>HTML5 - semantic markup</li>
         <li>CSS fundamentals</li>
         <li>Learning JavaScript</li>
     </ul>
@@ -138,18 +138,18 @@ Now we fill `<main>` with real text, using proper heading hierarchy (lesson 2) �
     <ol>
         <li>Started learning web development on my own</li>
         <li>Completed the "HTML: A to Z" course</li>
-        <li>Planning to continue — CSS and JavaScript next</li>
+        <li>Planning to continue - CSS and JavaScript next</li>
     </ol>
 </main>
 ```
 
-Use `<strong>`/`<em>` only where the text genuinely requires semantic emphasis — not for decoration, but for meaning (as we covered in lesson 2).
+Use `<strong>`/`<em>` only where the text genuinely requires semantic emphasis - not for decoration, but for meaning (as we covered in lesson 2).
 
 ---
 
 ## Block 4. Step-by-step build: media (images)
 
-Add images where they're appropriate — profile photo, project previews, illustrations. Don't forget about `alt` (lesson 4) and `figure`/`figcaption` when an image needs a caption.
+Add images where they're appropriate - profile photo, project previews, illustrations. Don't forget about `alt` (lesson 4) and `figure`/`figcaption` when an image needs a caption.
 
 ```html
 <figure>
@@ -158,15 +158,15 @@ Add images where they're appropriate — profile photo, project previews, illust
 </figure>
 ```
 
-**If you don't have your own photos for the project** — use free placeholder images (it's still important to write meaningful `alt` text that describes what's actually shown in the image, not made-up text).
+**If you don't have your own photos for the project** - use free placeholder images (it's still important to write meaningful `alt` text that describes what's actually shown in the image, not made-up text).
 
 ---
 
 ## Block 5. Step-by-step build: table
 
-Add a table where your project actually has tabular data (lesson 5) — remember the rule: tables are only for data, not for layout.
+Add a table where your project actually has tabular data (lesson 5) - remember the rule: tables are only for data, not for layout.
 
-**Example for `contact.html` — contact methods table:**
+**Example for `contact.html` - contact methods table:**
 
 ```html
 <table>
@@ -193,7 +193,7 @@ Add a table where your project actually has tabular data (lesson 5) — remember
 </table>
 ```
 
-**If a table doesn't fit your project topic** (for example, a purely visual portfolio with no comparative data) — that's fine, don't artificially add a table just to use the tag. Use your engineering judgment: the tag should appear where it solves a real problem.
+**If a table doesn't fit your project topic** (for example, a purely visual portfolio with no comparative data) - that's fine, don't artificially add a table just to use the tag. Use your engineering judgment: the tag should appear where it solves a real problem.
 
 ---
 
@@ -226,14 +226,14 @@ Add a contact form (lessons 6-7), with proper `label`/`for`/`id` linkage, groupi
 
 ## Block 7. Step-by-step build: meta tags
 
-Fill out the `<head>` of each page (lesson 9) — now that the content is ready, it's easy to write a meaningful `description`.
+Fill out the `<head>` of each page (lesson 9) - now that the content is ready, it's easy to write a meaningful `description`.
 
 ```html
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About me — Aziz, an aspiring web developer learning HTML, CSS, and JavaScript.">
-    <title>About Me — Aziz's Portfolio</title>
+    <meta name="description" content="About me - Aziz, an aspiring web developer learning HTML, CSS, and JavaScript.">
+    <title>About Me - Aziz's Portfolio</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -250,30 +250,30 @@ Final check of each page using the tools from lesson 8:
 - All `<img>` tags have a meaningful `alt` (or empty `alt=""` for decorative images).
 - Icon links without text have `aria-label`.
 - Heading hierarchy has no gaps and a single `<h1>` per page.
-- Test Tab navigation — reach every interactive element without a mouse.
+- Test Tab navigation - reach every interactive element without a mouse.
 
 ---
 
 ## Block 9. Final quality checklist
 
-Go through this list for **every** page of your project — mark them right on paper or in your notes:
+Go through this list for **every** page of your project - mark them right on paper or in your notes:
 
 - [ ] Single `<h1>` on the page
 - [ ] Semantics instead of div soup (`header`/`nav`/`main`/`footer` used for their intended purpose)
 - [ ] `alt` on all `<img>` tags
 - [ ] `label` on all form fields
-- [ ] Meaningful link text (not "click here", but a clear description — e.g., "Read more about the project")
+- [ ] Meaningful link text (not "click here", but a clear description - e.g., "Read more about the project")
 - [ ] `meta charset` and `meta viewport` in place
 - [ ] Code passes W3C validation without errors
-- [ ] Page is readable on a mobile screen (you can check via DevTools — device mode, phone/tablet icon in the top panel)
+- [ ] Page is readable on a mobile screen (you can check via DevTools - device mode, phone/tablet icon in the top panel)
 
-**Go through this checklist right now with one of your completed pages** — chances are, you'll find at least one item worth improving. This is normal and useful — this is exactly what a real quality check before publication looks like.
+**Go through this checklist right now with one of your completed pages** - chances are, you'll find at least one item worth improving. This is normal and useful - this is exactly what a real quality check before publication looks like.
 
 ---
 
 ## Block 10. Publishing to GitHub Pages
 
-The final step of the course — making your site accessible to the entire world via a real URL, not just on your computer.
+The final step of the course - making your site accessible to the entire world via a real URL, not just on your computer.
 
 ### What is GitHub Pages
 
@@ -281,7 +281,7 @@ GitHub is a service for storing code (we mentioned it as a platform for portfoli
 
 ### Step-by-step instructions
 
-**Step 1.** If you don't have a GitHub account yet — sign up at github.com.
+**Step 1.** If you don't have a GitHub account yet - sign up at github.com.
 
 **Step 2.** Create a new repository:
 
@@ -292,13 +292,13 @@ GitHub is a service for storing code (we mentioned it as a platform for portfoli
 
 **Step 3.** Upload project files using one of two methods:
 
-_Method A — via the web interface (easier for beginners):_
+_Method A - via the web interface (easier for beginners):_
 
 - On the repository page, click "uploading an existing file".
 - Drag and drop all your project files and folders (`index.html`, `css/`, `js/`, `images/`, etc.).
 - At the bottom, click "Commit changes".
 
-_Method B — via Git from the terminal (if you're already familiar with Git):_
+_Method B - via Git from the terminal (if you're already familiar with Git):_
 
 ```bash
 git init
@@ -316,21 +316,21 @@ git push -u origin main
 - Under "Source", select the `main` branch and the `/ (root)` folder.
 - Click "Save".
 
-**Step 5.** Wait 1-2 minutes — GitHub will build and publish your site. Refresh the "Pages" settings page — a link will appear like:
+**Step 5.** Wait 1-2 minutes - GitHub will build and publish your site. Refresh the "Pages" settings page - a link will appear like:
 
 ```
 https://ваш-username.github.io/my-portfolio/
 ```
 
-**Step 6.** Open that link in your browser — your site is now accessible to anyone on the internet.
+**Step 6.** Open that link in your browser - your site is now accessible to anyone on the internet.
 
 ### Important practical note: the main file name
 
-GitHub Pages automatically opens the `index.html` file when visiting the repository's root address — so it's important that your home page is named `index.html` (not `home.html` or `main.html`), otherwise it won't open automatically via the short URL.
+GitHub Pages automatically opens the `index.html` file when visiting the repository's root address - so it's important that your home page is named `index.html` (not `home.html` or `main.html`), otherwise it won't open automatically via the short URL.
 
 ### Updating the site in the future
 
-If you want to make changes later — just upload the updated files the same way (via the web interface "Add file" → "Upload files", or `git push` if you're using the terminal) — GitHub Pages will automatically rebuild and update the published version of your site within a couple of minutes.
+If you want to make changes later - just upload the updated files the same way (via the web interface "Add file" → "Upload files", or `git push` if you're using the terminal) - GitHub Pages will automatically rebuild and update the published version of your site within a couple of minutes.
 
 ---
 
@@ -347,13 +347,13 @@ If you want to make changes later — just upload the updated files the same way
 
 ## Course summary
 
-Congratulations — you've traveled the path from the first `<!DOCTYPE html>` to a fully published multi-page website! Over 10 lessons, you've mastered:
+Congratulations - you've traveled the path from the first `<!DOCTYPE html>` to a fully published multi-page website! Over 10 lessons, you've mastered:
 
 - HTML document structure and basic tools (lessons 1-2).
 - Links and navigation between pages (lesson 3).
 - Working with images and media (lesson 4).
 - Tables for tabular data (lesson 5).
-- Forms — both levels of complexity, from simple fields to validation (lessons 6-7).
+- Forms - both levels of complexity, from simple fields to validation (lessons 6-7).
 - Accessibility as a principle, not a separate "feature" (lesson 8).
 - Meta tags, SEO basics, and integration with CSS/JS (lesson 9).
 - The full cycle: from project planning to public publication (lesson 10).

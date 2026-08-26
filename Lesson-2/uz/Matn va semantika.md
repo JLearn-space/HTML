@@ -30,7 +30,7 @@
 
 ## 1-blok. Sarlavhalar h1-h6
 
-**Oddiy qilib aytganda:** tasavvur qiling, siz kitob yozayapsiz. Kitobning nomi bor (eng katta va muhimi — u bitta), keyin boblar, keyin boblar ichidagi bo'limlar, keyin bo'limlardagi pastki bo'limlar. HTML'dagi sarlavhalar aynan shunday ishlaydi — bu oddiy "katta qalin matn" emas, bu **mazmun ierarxiyasi**.
+**Oddiy qilib aytganda:** tasavvur qiling, siz kitob yozayapsiz. Kitobning nomi bor (eng katta va muhimi - u bitta), keyin boblar, keyin boblar ichidagi bo'limlar, keyin bo'limlardagi pastki bo'limlar. HTML'dagi sarlavhalar aynan shunday ishlaydi - bu oddiy "katta qalin matn" emas, bu **mazmun ierarxiyasi**.
 
 HTML'da bitta sarlavha darajasi bor: `<h1>` (eng muhim, "kitob nomi") dan `<h6>` (eng kichik, "pastki bo'limning pastki bo'limi") gacha.
 
@@ -43,9 +43,9 @@ HTML'da bitta sarlavha darajasi bor: `<h1>` (eng muhim, "kitob nomi") dan `<h6>`
 <h6>Eng kichik sarlavha</h6>
 ```
 
-**Muhim qoida:** sahifada **faqat bitta** `<h1>` bo'lishi kerak — bu uning asosiy sarlavhasi, kitob nomining o'rnini bosadi. Qolgan darajalarni (`h2`–`h6`) istalgancha ishlatish mumkin, lekin **darajalar o'tib ketish mumkin emas** — masalan, `<h2>` dan darhol `<h4>` ga o'tish, `<h3>` ni chetlab o'tish. Bu kitob mundarjasidagidek: "2-bob" to'satda "2.1.1-bo'lim" ga aylanib ketolmaydi, orada "2.1-bo'lim" bo'lmasdan.
+**Muhim qoida:** sahifada **faqat bitta** `<h1>` bo'lishi kerak - bu uning asosiy sarlavhasi, kitob nomining o'rnini bosadi. Qolgan darajalarni (`h2`–`h6`) istalgancha ishlatish mumkin, lekin **darajalar o'tib ketish mumkin emas** - masalan, `<h2>` dan darhol `<h4>` ga o'tish, `<h3>` ni chetlab o'tish. Bu kitob mundarjasidagidek: "2-bob" to'satda "2.1.1-bo'lim" ga aylanib ketolmaydi, orada "2.1-bo'lim" bo'lmasdan.
 
-**Nima uchun bu muhim, "chiroy uchun" emas:** sarlavhalar faqat matnning vizual o'lchami emas. Ekran o'quvchilari (ko'zi ojizlar uchun dasturlar — bu haqida 8-darda batafsil) sarlavhalar bo'yicha sahifaning "xaritasini" quradi va foydalanuvchiga darhol bo'limlar orasida o'tish imkonini beradi. Agar `<h3>` ni faqat "kichikroq matn kerak" degan sababga ko'ra ishlatsangiz, haqiqatan ham pastki bo'lim bo'lmagan holda — bu xaritani foydalanuvchi uchun buzasiz.
+**Nima uchun bu muhim, "chiroy uchun" emas:** sarlavhalar faqat matnning vizual o'lchami emas. Ekran o'quvchilari (ko'zi ojizlar uchun dasturlar - bu haqida 8-darda batafsil) sarlavhalar bo'yicha sahifaning "xaritasini" quradi va foydalanuvchiga darhol bo'limlar orasida o'tish imkonini beradi. Agar `<h3>` ni faqat "kichikroq matn kerak" degan sababga ko'ra ishlatsangiz, haqiqatan ham pastki bo'lim bo'lmagan holda - bu xaritani foydalanuvchi uchun buzasiz.
 
 ```mermaid
 mindmap
@@ -71,18 +71,18 @@ mindmap
 
 ## 2-blok. Abzatslar va satr o'tkazishlar: p, br, hr
 
-### `<p>` — abzats
+### `<p>` - abzats
 
-`<p>` (paragraph) tegi bitta mazmun matn blokini o'rab oladi — kitobdagi abzats bilan bir xil.
+`<p>` (paragraph) tegi bitta mazmun matn blokini o'rab oladi - kitobdagi abzats bilan bir xil.
 
 ```html
 <p>Bu matnning birinchi abzatsi. Bu yerda istalgancha gap bo'lishi mumkin.</p>
-<p>Bu esa ikkinchi, alohida abzats — ularning orasida brauzer avtomatik ravishda vertikal bo'shliq qo'shadi.</p>
+<p>Bu esa ikkinchi, alohida abzats - ularning orasida brauzer avtomatik ravishda vertikal bo'shliq qo'shadi.</p>
 ```
 
-### `<br>` — satr o'tkazish
+### `<br>` - satr o'tkazish
 
-Juft bo'lmagan teg (1-darsda tahlil qilgandek — yopuvchisi yo'q), u oddiygina matnni yangi satrga o'tkazadi **bitta mazmun bloki ichida**, yangi abzats yaratmasdan.
+Juft bo'lmagan teg (1-darsda tahlil qilgandek - yopuvchisi yo'q), u oddiygina matnni yangi satrga o'tkazadi **bitta mazmun bloki ichida**, yangi abzats yaratmasdan.
 
 ```html
 <p>
@@ -92,16 +92,16 @@ Juft bo'lmagan teg (1-darsda tahlil qilgandek — yopuvchisi yo'q), u oddiygina 
 </p>
 ```
 
-**Qachon ishlatish:** faqat satr o'tkazish mazmunan muhim bo'lgan hollarda — pochta manzili, she'riyat, qo'shiq satrlari. **Abzatslar orasidagi bo'shliq yaratish uchun `<br>` ishlatmang** — buning uchun `<p>` mavjud, elementlar orasidagi masofa esa CSS vazifasi (9-dars va keyin).
+**Qachon ishlatish:** faqat satr o'tkazish mazmunan muhim bo'lgan hollarda - pochta manzili, she'riyat, qo'shiq satrlari. **Abzatslar orasidagi bo'shliq yaratish uchun `<br>` ishlatmang** - buning uchun `<p>` mavjud, elementlar orasidagi masofa esa CSS vazifasi (9-dars va keyin).
 
-### `<hr>` — gorizontal chiziq
+### `<hr>` - gorizontal chiziq
 
-Shuningdek juft bo'lmagan teg. Tematik ajratishni bildiradi — matn ichida mavzuning o'zgarishini (masalan, maqolaning yangi mavzusiga o'tish).
+Shuningdek juft bo'lmagan teg. Tematik ajratishni bildiradi - matn ichida mavzuning o'zgarishini (masalan, maqolaning yangi mavzusiga o'tish).
 
 ```html
 <p>HTML tarixi haqida maqolaning birinchi qismi.</p>
 <hr>
-<p>Maqolaning ikkinchi qismi — allaqachon zamonaviy standartlar haqida.</p>
+<p>Maqolaning ikkinchi qismi - allaqachon zamonaviy standartlar haqida.</p>
 ```
 
 ---
@@ -111,8 +111,8 @@ Shuningdek juft bo'lmagan teg. Tematik ajratishni bildiradi — matn ichida mavz
 | Xato                                                                                           | Qanday tuzatish                                                                              |
 | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------- |
 | Abzatslar orasidagi bo'shliqni taqlid qilish uchun bir nechta `<br>` ni ketma-ket ishlatish: `Matn<br><br><br>Matn` | Abzatslarni `<p>` teglari bilan ajrating, masofani keyin CSS orqali sozlang                  |
-| Sahifaning barcha matnini bitta `<p>` ga o'rab olish va `<br>` orqali satr o'tkazish              | Har bir mazmun abzatsi — alohida `<p>` tegi                                                  |
-| `<h1>` ni sahifada bir necha marta "faqat katta matn" sifatida ishlatish                         | Sahifada faqat bitta `<h1>` — qolgan katta sarlavhalar uchun `<h2>` va undan pastrog'ini ishlating |
+| Sahifaning barcha matnini bitta `<p>` ga o'rab olish va `<br>` orqali satr o'tkazish              | Har bir mazmun abzatsi - alohida `<p>` tegi                                                  |
+| `<h1>` ni sahifada bir necha marta "faqat katta matn" sifatida ishlatish                         | Sahifada faqat bitta `<h1>` - qolgan katta sarlavhalar uchun `<h2>` va undan pastrog'ini ishlating |
 | Sarlavha darajalarini o'tkazib yuborish (`h2` -> `h4`)                                           | Ketma-ketlikni saqlang: `h2` -> `h3` -> `h4`, "o'tib ketishlarsiz"                             |
 
 ---
@@ -121,48 +121,48 @@ Shuningdek juft bo'lmagan teg. Tematik ajratishni bildiradi — matn ichida mavz
 
 Bu yerda asosiy tamoyilni tushunish muhim: **HTML mazmunni tasvirlaydi, matn vizual ko'rinishini emas.** Bu zamonaviy yondashuvni eskidan ajratadi.
 
-### `<strong>` — muhimlik (faqat "qalin" emas)
+### `<strong>` - muhimlik (faqat "qalin" emas)
 
 ```html
 <p><strong>E'tibor:</strong> ishni boshlashdan oldin faylni saqlang.</p>
 ```
 
-Brauzer `<strong>` ichidagi matnni standart ravishda qalin ko'rsatadi — lekin bu tegning ma'nosi "qil qalin" emas, "bu muhim, o'tkazib yuborma". Ekran o'quvchisi bu matnni hatto alohida ohangda o'qishi mumkin.
+Brauzer `<strong>` ichidagi matnni standart ravishda qalin ko'rsatadi - lekin bu tegning ma'nosi "qil qalin" emas, "bu muhim, o'tkazib yuborma". Ekran o'quvchisi bu matnni hatto alohida ohangda o'qishi mumkin.
 
-### `<em>` — mazmun aksenti (faqat " kursiv" emas)
+### `<em>` - mazmun aksenti (faqat " kursiv" emas)
 
 ```html
 <p>Men bu loyihani bugun <em>haqiqatan ham</em> tugatishim kerak.</p>
 ```
 
-Standart ravishda kursiv ko'rsatiladi, lekin ma'no — "shu so'zga mantiqiy aksent tushadi", siz jumlani ovoz chiqarib aytganingizda shu so'zni ovoz bilan ajratgandek.
+Standart ravishda kursiv ko'rsatiladi, lekin ma'no - "shu so'zga mantiqiy aksent tushadi", siz jumlani ovoz chiqarib aytganingizda shu so'zni ovoz bilan ajratgandek.
 
 ###  Eskirgan teglar: `<b>` va `<i>
 
-Oldin `<b>` (bold — oddiy qalin shrift, ma'nosiz) va `<i>` (italic — oddiy kursiv, ma'nosiz) teglari ishlatilgan. **Ular brauzerlarda hali "ishlaydi", lekin tavsiya etilmaydi**, chunki:
+Oldin `<b>` (bold - oddiy qalin shrift, ma'nosiz) va `<i>` (italic - oddiy kursiv, ma'nosiz) teglari ishlatilgan. **Ular brauzerlarda hali "ishlaydi", lekin tavsiya etilmaydi**, chunki:
 
 - ular faqat tashqi ko'rinishni, ma'noni emas tasvirlaydi;
-- ekran o'quvchilari ularni muhim narsa sifatida qabul qilmaydi — oddiy matn sifatida;
+- ekran o'quvchilari ularni muhim narsa sifatida qabul qilmaydi - oddiy matn sifatida;
 - keyin vizual ko'rinishni CSS orqali o'zgartirishga qaror qilsangiz, `<strong>` va `<em>` ma'noni saqlagan holda stilizatsiya qilinishi mumkin, `<b>`/`<i>` esa hech narsa aytmaydigan yo'q yo'l.
 
-**Qoida oddiy:** agar matn mazmunan muhim bo'lsa — `<strong>` ishlating. Agar oddiy vizual qilish kerak bo'lsa, ma'nomuhimlik holda (bu kamdan-kam hokiz) — bu CSS vazifasi, HTML-teg emas.
+**Qoida oddiy:** agar matn mazmunan muhim bo'lsa - `<strong>` ishlating. Agar oddiy vizual qilish kerak bo'lsa, ma'nomuhimlik holda (bu kamdan-kam hokiz) - bu CSS vazifasi, HTML-teg emas.
 
-### `<mark>` — marker bilan belgilash
+### `<mark>` - marker bilan belgilash
 
 ```html
 <p>Hisobotda <uchta jiddiy xato</mark> topildi, ular tuzatilishi kerak.</p>
 ```
 
-Taqqoslash: siz sariq marker olib, qog'oz matndagi satrni yoritgandek — u "o'zi o'zi muhim" uchun emas, hozir tegishli bo'lgani uchun (masalan, sahifadagi qidiruv natijasi).
+Taqqoslash: siz sariq marker olib, qog'oz matndagi satrni yoritgandek - u "o'zi o'zi muhim" uchun emas, hozir tegishli bo'lgani uchun (masalan, sahifadagi qidiruv natijasi).
 
-### `<small>` — kichik matn (eslatmalar, ogohlantirishlar)
+### `<small>` - kichik matn (eslatmalar, ogohlantirishlar)
 
 ```html
-<p>Kurs narxi — 500 000 so'm.</p>
+<p>Kurs narxi - 500 000 so'm.</p>
 <p><small>Narx nashr etilgan paytda dolzarb va o'zgarishi mumkin.</small></p>
 ```
 
-Izohlar, mualliflik huquqi, huquqiy eslatmalar uchun ishlatiladi — asosiy matndan kamroq muhim, lekin ko'rsatilishi kerak bo'lgan narsa.
+Izohlar, mualliflik huquqi, huquqiy eslatmalar uchun ishlatiladi - asosiy matndan kamroq muhim, lekin ko'rsatilishi kerak bo'lgan narsa.
 
 ---
 
@@ -170,31 +170,31 @@ Izohlar, mualliflik huquqi, huquqiy eslatmalar uchun ishlatiladi — asosiy matn
 
 | Xato                                                                 | Qanday tuzatish                                                                                         |
 | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `<strong>`/`<em>` o'rniga `<b>`/`<i>` ishlatish                      | `<strong>` (muhimlik) va `<em>` (aksent) ga o'ting — ular ma'noni olib yuradi, faqat tashqi ko'rinishni emas |
+| `<strong>`/`<em>` o'rniga `<b>`/`<i>` ishlatish                      | `<strong>` (muhimlik) va `<em>` (aksent) ga o'ting - ular ma'noni olib yuradi, faqat tashqi ko'rinishni emas |
 | Butun abzatsni `<strong>` ga o'rab olish                             | Faqat haqiqatan muhim so'zlarni/iboralarni ajrating, butun matnni emas                                  |
-| Oddiy muhimlik belgilash uchun `<strong>` o'rniga `<mark>` ishlatish | `<mark>` — "tegishlilikni yoritish" (masalan, qidiruvda moslik), umumiy matn muhimligi emas              |
+| Oddiy muhimlik belgilash uchun `<strong>` o'rniga `<mark>` ishlatish | `<mark>` - "tegishlilikni yoritish" (masalan, qidiruvda moslik), umumiy matn muhimligi emas              |
 
 ---
 
 ## 4-blok. Ro'yxatlar: ul, ol, dl
 
-### `<ul>` — belgilangan ro'yxat (unordered list)
+### `<ul>` - belgilangan ro'yxat (unordered list)
 
 Elementlar tartibi muhim bo'lmagan hollarda ishlatiladi.
 
 ```html
 <ul>
-    <li>HTML — tuzilish</li>
-    <li>CSS — bezatish</li>
-    <li>JavaScript — xatti-harakat</li>
+    <li>HTML - tuzilish</li>
+    <li>CSS - bezatish</li>
+    <li>JavaScript - xatti-harakat</li>
 </ul>
 ```
 
-Har bir ro'yxat elementi `<li>` (list item) tegiga o'raladi — va `<li>` faqat `<ul>` yoki `<ol>` ichida bo'lishi mumkin, o'zi mustaqil ishlatilmaydi.
+Har bir ro'yxat elementi `<li>` (list item) tegiga o'raladi - va `<li>` faqat `<ul>` yoki `<ol>` ichida bo'lishi mumkin, o'zi mustaqil ishlatilmaydi.
 
-### `<ol>` — raqamlangan ro'yxat (ordered list)
+### `<ol>` - raqamlangan ro'yxat (ordered list)
 
-Tartibi muhim bo'lgan hollarda ishlatiladi — masalan, bosqichma-bosqich ko'rsatma.
+Tartibi muhim bo'lgan hollarda ishlatiladi - masalan, bosqichma-bosqich ko'rsatma.
 
 ```html
 <ol>
@@ -205,11 +205,11 @@ Tartibi muhim bo'lgan hollarda ishlatiladi — masalan, bosqichma-bosqich ko'rsa
 </ol>
 ```
 
-**Taqqoslash:** `<ul>` — bu xaridorlik ro'yxati (siz sut va noni qaysi tartibda savatga qo'ysangiz ham farqi yo'q), `<ol>` esa retsept (retsept teskari tartibni talab qilmagan holda, "ingredientlarni aralashtirish" ularni "to'g'rab olish" dan oldin bo'lishi mumkin emas).
+**Taqqoslash:** `<ul>` - bu xaridorlik ro'yxati (siz sut va noni qaysi tartibda savatga qo'ysangiz ham farqi yo'q), `<ol>` esa retsept (retsept teskari tartibni talab qilmagan holda, "ingredientlarni aralashtirish" ularni "to'g'rab olish" dan oldin bo'lishi mumkin emas).
 
-### `<dl>` — ta'riflar ro'yxati (description list)
+### `<dl>` - ta'riflar ro'yxati (description list)
 
-"Atama — ta'rif" juftliklari uchun ishlatiladi, masalan, lu'zariy.
+"Atama - ta'rif" juftliklari uchun ishlatiladi, masalan, lu'zariy.
 
 ```html
 <dl>
@@ -221,11 +221,11 @@ Tartibi muhim bo'lgan hollarda ishlatiladi — masalan, bosqichma-bosqich ko'rsa
 </dl>
 ```
 
-Bu yerda `<dt>` (definition term) — bu atama, `<dd>` (definition description) esa uning ta'rifi. Bitta `<dt>` ning bir nechta `<dd>` si bo'lishi mumkin.
+Bu yerda `<dt>` (definition term) - bu atama, `<dd>` (definition description) esa uning ta'rifi. Bitta `<dt>` ning bir nechta `<dd>` si bo'lishi mumkin.
 
 ### Ichki ro'yxatlar
 
-Ro'yxatlarni bir-biriga ichki qilib joylashtirish mumkin — masalan, biror element ichidagi pastki elementlar:
+Ro'yxatlarni bir-biriga ichki qilib joylashtirish mumkin - masalan, biror element ichidagi pastki elementlar:
 
 ```html
 <ul>
@@ -278,13 +278,13 @@ E'tibor bering: ichki `<ul>` ota-ona ro'yxatining `<li>` tegi **ichida** joylash
 
 ## 6-blok. Semantik teglar: header, nav, main, section, article, aside, footer
 
-**Oddiy qilib aytganda:** biz haligacha sahifa ichidagi matn haqida gaplashdik. Endi **o'z sahifani** ma'noni ifodalovchi katta bloklarga qanday bo'lishishini gaplashamiz — xonadagi xonalar turli maqsadga ega (oshxona, yotoq xonasi, mehmonxona) va katta shaklsiz makon emas.
+**Oddiy qilib aytganda:** biz haligacha sahifa ichidagi matn haqida gaplashdik. Endi **o'z sahifani** ma'noni ifodalovchi katta bloklarga qanday bo'lishishini gaplashamiz - xonadagi xonalar turli maqsadga ega (oshxona, yotoq xonasi, mehmonxona) va katta shaklsiz makon emas.
 
-Oldin (va hali ham ko'p eski loyihalarda) veb-sahifalar mazmunsiz cheksiz `<div>` lar orqali dizayn qilingan — bu **"<div> shorbasi"** deb ataladi: `<div class="header"><div class="nav">...`. Muammo shundaki, `<div>` — bu "nomsiz quti", brauzer va ekran o'quvchisi uning ichidagini tushunmaydi — navigatsiya mi, sayt pastqami, yoki asosiy kontentmi.
+Oldin (va hali ham ko'p eski loyihalarda) veb-sahifalar mazmunsiz cheksiz `<div>` lar orqali dizayn qilingan - bu **"<div> shorbasi"** deb ataladi: `<div class="header"><div class="nav">...`. Muammo shundaki, `<div>` - bu "nomsiz quti", brauzer va ekran o'quvchisi uning ichidagini tushunmaydi - navigatsiya mi, sayt pastqami, yoki asosiy kontentmi.
 
-**Semantik teglar shu muammoni hal qiladi** — ular o'z nomi blokning maqsadini tushunarli qiladigan tarzda nomlangan.
+**Semantik teglar shu muammoni hal qiladi** - ular o'z nomi blokning maqsadini tushunarli qiladigan tarzda nomlangan.
 
-### `<header>` — sahifa yoki bo'limning tepa qismi
+### `<header>` - sahifa yoki bo'limning tepa qismi
 
 ```html
 <header>
@@ -293,9 +293,9 @@ Oldin (va hali ham ko'p eski loyihalarda) veb-sahifalar mazmunsiz cheksiz `<div>
 </header>
 ```
 
-Odatda logo, sayt nomi, ba'zan — navigatsiyani o'z ichiga oladi.
+Odatda logo, sayt nomi, ba'zan - navigatsiyani o'z ichiga oladi.
 
-### `<nav>` — navigatsiya
+### `<nav>` - navigatsiya
 
 ```html
 <nav>
@@ -307,9 +307,9 @@ Odatda logo, sayt nomi, ba'zan — navigatsiyani o'z ichiga oladi.
 </nav>
 ```
 
-_(`<a>` tegi va havolalar haqida 3-darsda batafsil gaplashamiz — hozir faqat menyuning vizual misoli sifatida ishlatamiz.)_
+_(`<a>` tegi va havolalar haqida 3-darsda batafsil gaplashamiz - hozir faqat menyuning vizual misoli sifatida ishlatamiz.)_
 
-### `<main>` — sahifaning asosiy mazmuni
+### `<main>` - sahifaning asosiy mazmuni
 
 ```html
 <main>
@@ -318,9 +318,9 @@ _(`<a>` tegi va havolalar haqida 3-darsda batafsil gaplashamiz — hozir faqat m
 </main>
 ```
 
-**Muhim qoida:** `<main>` sahifada **faqat bitta** bo'lishi kerak — bu foydalanuvchi sahifaga kelgan kontent (tepa qismi, menyu va pastqasiz).
+**Muhim qoida:** `<main>` sahifada **faqat bitta** bo'lishi kerak - bu foydalanuvchi sahifaga kelgan kontent (tepa qismi, menyu va pastqasiz).
 
-### `<section>` — tematik bo'lim
+### `<section>` - tematik bo'lim
 
 ```html
 <section>
@@ -329,9 +329,9 @@ _(`<a>` tegi va havolalar haqida 3-darsda batafsil gaplashamiz — hozir faqat m
 </section>
 ```
 
-Bitta tema birlashtirilgan kontentni guruhlash uchun ishlatiladi — odatda `<section>` ning o'z sarlavhasi bo'ladi.
+Bitta tema birlashtirilgan kontentni guruhlash uchun ishlatiladi - odatda `<section>` ning o'z sarlavhasi bo'ladi.
 
-### `<article>` — mustaqil, mustaqil kontent
+### `<article>` - mustaqil, mustaqil kontent
 
 ```html
 <article>
@@ -340,9 +340,9 @@ Bitta tema birlashtirilgan kontentni guruhlash uchun ishlatiladi — odatda `<se
 </article>
 ```
 
-**`<article>` ni `<section>` dan qanday ajratish mumkin:** "bu blok qolgan sahifa kontekstisiz, o'zi o'zi ma'nolimi, masalan, uni ajratib alohida nashr qilsa?" Blogdagi post, yangilik, foydalanuvchi izohi — bu `<article>`. Bosh sahifadagi "Biz haqimizda" sahifaning qolgan qismisiz ma'nosiz bo'lsa — bu `<section>`.
+**`<article>` ni `<section>` dan qanday ajratish mumkin:** "bu blok qolgan sahifa kontekstisiz, o'zi o'zi ma'nolimi, masalan, uni ajratib alohida nashr qilsa?" Blogdagi post, yangilik, foydalanuvchi izohi - bu `<article>`. Bosh sahifadagi "Biz haqimizda" sahifaning qolgan qismisiz ma'nosiz bo'lsa - bu `<section>`.
 
-### `<aside>` — qo'shimcha, ikkinchi darajali ma'lumot
+### `<aside>` - qo'shimcha, ikkinchi darajali ma'lumot
 
 ```html
 <aside>
@@ -354,9 +354,9 @@ Bitta tema birlashtirilgan kontentni guruhlash uchun ishlatiladi — odatda `<se
 </aside>
 ```
 
-Taqqoslash: gazetaning yon ustunidagi "shuningdek o'qing" — qiziq, lekin maqolaning asosiy mazmuni emas.
+Taqqoslash: gazetaning yon ustunidagi "shuningdek o'qing" - qiziq, lekin maqolaning asosiy mazmuni emas.
 
-### `<footer>` — sahifa yoki bo'limning pastki qismi
+### `<footer>` - sahifa yoki bo'limning pastki qismi
 
 ```html
 <footer>
@@ -402,17 +402,17 @@ Odatda mualliflik huquqini, aloqa ma'lumotlarini, ijtimoiy tarmoqlarga havolalar
 
 Tuzilishga e'tibor bering: `<header>` va `<footer>` tashqarida, `<main>` sahifada bitta va asosiy kontentni o'z ichiga oladi, `<article>` va `<aside>` allaqachon `<main>` ichida.
 
-**Muhim:** semantik teglar `<div>` ning to'liq o'rnini bosmaydi. `<div>` hali ham qo'llaniladi, blokqa hech qanday semantik ma'no mos kelmasa (masalan, oddiy CSS stilizatsiya uchun o'ram). Lekin blokning aniq mazmunli maqsadi bo'lsa — semantik tegni afzal ko'ring.
+**Muhim:** semantik teglar `<div>` ning to'liq o'rnini bosmaydi. `<div>` hali ham qo'llaniladi, blokqa hech qanday semantik ma'no mos kelmasa (masalan, oddiy CSS stilizatsiya uchun o'ram). Lekin blokning aniq mazmunli maqsadi bo'lsa - semantik tegni afzal ko'ring.
 
 ```mermaid
 flowchart TD
     A["body"] --> B["header"]
     A --> C["main"]
     A --> D["footer"]
-    B --> B1["h1 — Logo / Title"]
-    B --> B2["nav — Navigation"]
-    C --> C1["article — Main Content"]
-    C --> C2["aside — Sidebar"]
+    B --> B1["h1 - Logo / Title"]
+    B --> B2["nav - Navigation"]
+    C --> C1["article - Main Content"]
+    C --> C2["aside - Sidebar"]
     C1 --> C1a["section"]
     C1 --> C1b["h2, p, ul"]
     D --> D1["Copyright, Links"]
@@ -424,9 +424,9 @@ flowchart TD
 
 | Xato                                                                  | Qanday tuzatish                                                                                                                                     |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Bitta sahifada bir nechta `<main>` ishlatish                          | `<main>` — sahifada faqat bitta                                                                                                                     |
-| Tepa qismi/pastqasi/navigatsiya ekanligi aniq bo'lgan narsani `<div>` ga o'rab olish | `<header>`, `<footer>`, `<nav>` ishlating — ular brauzer va ekran o'quvchilari uchun ma'noni olib yuradi                                              |
-| `<section>` va `<article>` ni aralashtirish                            | O'zingizdan so'rang: "bu blok qolgan sahifasiz alohida ma'nolimi?" Ha bo'lsa — `<article>`, yo'q bo'lsa — `<section>`                                |
+| Bitta sahifada bir nechta `<main>` ishlatish                          | `<main>` - sahifada faqat bitta                                                                                                                     |
+| Tepa qismi/pastqasi/navigatsiya ekanligi aniq bo'lgan narsani `<div>` ga o'rab olish | `<header>`, `<footer>`, `<nav>` ishlating - ular brauzer va ekran o'quvchilari uchun ma'noni olib yuradi                                              |
+| `<section>` va `<article>` ni aralashtirish                            | O'zingizdan so'rang: "bu blok qolgan sahifasiz alohida ma'nolimi?" Ha bo'lsa - `<article>`, yo'q bo'lsa - `<section>`                                |
 | Har bir kichik havolalar ro'yxatiga `<nav>` qo'yish                   | `<nav>` saytning **asosiy** navigatsiyasi uchun mo'ljallangan, har qanday havolalar to'plami uchun emas (masalan, maqola ichidagi havolalarni `<nav>` ga o'ramaslik kerak) |
 
 ---
@@ -435,10 +435,10 @@ flowchart TD
 
 Bugun siz quyidagilarni o'rgandingiz:
 
-- Sarlavhalar `<h1>`–`<h6>` sahifaning mazmun ierarxiyasini quradi — kitob mundarjasidek, bitta `<h1>` bilan va darajalar "o'tib ketishlarsiz".
-- `<p>` — abzats, `<br>` — abzats ichidagi satr o'tkazish, `<hr>` — tematik ajratish.
-- `<strong>` va `<em>` mazmun muhimligini va aksentni ifodalaydi — eskirgan `<b>`/`<i>` dan farqli o'laroq, ular faqat tashqi ko'rinishni o'zgartiradi, ma'noni emas.
-- Uch xil ro'yxat: `<ul>` (tartib muhim emas), `<ol>` (tartib muhim), `<dl>` (atama — ta'rif).
+- Sarlavhalar `<h1>`–`<h6>` sahifaning mazmun ierarxiyasini quradi - kitob mundarjasidek, bitta `<h1>` bilan va darajalar "o'tib ketishlarsiz".
+- `<p>` - abzats, `<br>` - abzats ichidagi satr o'tkazish, `<hr>` - tematik ajratish.
+- `<strong>` va `<em>` mazmun muhimligini va aksentni ifodalaydi - eskirgan `<b>`/`<i>` dan farqli o'laroq, ular faqat tashqi ko'rinishni o'zgartiradi, ma'noni emas.
+- Uch xil ro'yxat: `<ul>` (tartib muhim emas), `<ol>` (tartib muhim), `<dl>` (atama - ta'rif).
 - Semantik teglar (`header`, `nav`, `main`, `section`, `article`, `aside`, `footer`) "<div> shorbasini" almashtiradi va sahifa tuzilishini brauzer, qidiruv tizimlari va ekran o'quvchilari uchun tushunarli qiladi.
 
 ➡ **Keyingi dars:** [Havolalar va navigatsiya](../../Lesson-3/uz/Havolalar%20va%20navigatsiya.md)
