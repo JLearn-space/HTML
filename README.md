@@ -38,3 +38,4 @@ Course materials are distributed under the **CC BY-NC-SA 4.0** license. You are 
 Полный текст лицензии — в файле [LICENSE](LICENSE). Официальная страница: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 © 2026 Javlonbek Saydullaev.
+My first Pull Request
